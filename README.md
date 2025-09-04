@@ -1,0 +1,1 @@
+# TARpe24_programeerimine_TallinnaRakenduslikKolledze
