@@ -2,5 +2,6 @@
 {
     public class PassportPhoto
     {
+        public int PassportPhotoID { get; set; }
     }
 }

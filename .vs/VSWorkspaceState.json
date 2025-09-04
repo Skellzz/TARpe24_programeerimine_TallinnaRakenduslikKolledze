@@ -1,7 +1,10 @@
 {
   "ExpandedNodes": [
-    ""
+    "",
+    "\\TallinnaRakenduslikKolledz",
+    "\\TallinnaRakenduslikKolledz\\Data",
+    "\\TallinnaRakenduslikKolledz\\Models"
   ],
-  "SelectedNode": "\\TallinnaRakenduslikKolledz.sln",
+  "SelectedNode": "\\TallinnaRakenduslikKolledz\\Models\\Enrollment.cs",
   "PreviewInSolutionExplorer": false
 }
