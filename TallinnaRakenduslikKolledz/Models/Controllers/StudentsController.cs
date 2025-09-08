@@ -15,6 +15,24 @@ namespace TallinnaRakenduslikKolledz.Models.Controllers
         {
             return View(await _context.Students.ToListAsync());
         }
+        [HttpGet]
+        public IActionResult Create()
+        {
+            return View();
+        }
+        [HttpPost]
+        [ValidateAntiForgeryToken]
+        public async Task<IActionResult> Create([Bind("Id,FirstName,LastName,EnrollmentDate,PassportPhoto")] Student student)
+        {
+            if (!ModelState.IsValid)
+            {
+                _context.Students.Add(student);
+                await _context.SaveChangesAsync();
+                return RedirectToAction("Index");
+                // return RedirectToAction(nameof(Index));
+            }
+            return View(student);
 
+        }
     }
 }

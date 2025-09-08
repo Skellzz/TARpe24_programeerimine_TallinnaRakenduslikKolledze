@@ -3,8 +3,9 @@
     "",
     "\\TallinnaRakenduslikKolledz",
     "\\TallinnaRakenduslikKolledz\\Data",
-    "\\TallinnaRakenduslikKolledz\\Models"
+    "\\TallinnaRakenduslikKolledz\\Models",
+    "\\TallinnaRakenduslikKolledz\\Models\\Controllers"
   ],
-  "SelectedNode": "\\TallinnaRakenduslikKolledz\\Program.cs",
+  "SelectedNode": "\\TallinnaRakenduslikKolledz\\Models\\Controllers\\StudentsController.cs",
   "PreviewInSolutionExplorer": false
 }
