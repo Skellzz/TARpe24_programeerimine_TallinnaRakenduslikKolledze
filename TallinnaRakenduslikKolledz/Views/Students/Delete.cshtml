@@ -1,0 +1,67 @@
+﻿@model TallinnaRakenduslikKolledz.Models.Student
+
+@{
+	ViewData["Title"] = "Kustuda Õpilane";
+}
+<h1>
+	Kusstuta Õpilane
+</h1>
+<h3>
+	Kas oled Kindel, et tahad Õpilast @Model.FirstName @Model.LastName eemaldada?
+</h3>
+<div>
+	<h4>
+		Õpilane @Model.FirstName @Model.LastName
+	</h4>
+	<dl class="row">
+    <dt class="col-sm-2">@Html.DisplayNameFor(Model => Model.LastName)</dt>
+    <dd class="col-sm-10">@Html.DisplayFor(Model => Model.LastName)</dd>
+    </dl>
+	<dl class="row">
+		<dt class="col-sm-2">@Html.DisplayNameFor(Model => Model.FirstName)</dt>
+	<dd class="col-sm-10">@Html.DisplayFor(Model => Model.FirstName)</dd>
+	</dl>
+	<dl class="row">
+		<dt class="col-sm-2">@Html.DisplayNameFor(Model => Model.EnrollmentDate)</dt>
+		<dd class="col-sm-10">@Html.DisplayFor(Model => Model.EnrollmentDate)</dd>
+	</dl>
+	<dl class="row">
+		<dt class="col-sm-2">@Html.DisplayNameFor(Model => Model.PassportPhotos)</dt>
+		<dd class="col-sm-10">@Html.DisplayFor(Model => Model.PassportPhotos)</dd>
+	</dl>
+
+	@if (Model.Enrollments != null)
+	{
+		foreach (var courseEnrollment in Model.Enrollments)
+		{
+			<dl class="row">
+				<dd class="col-sa-10">@courseEnrollment</dd>
+			</dl>	
+		
+		}
+	}
+	@if (Model.FunnyJokesMade != null)
+	{
+		@Model.FunnyJokesMade;
+	}
+	@if (Model.Smartnes != null)
+	{
+		@Model.Smartnes;
+	}
+	@if (Model.PassportPhotos !=null)
+	{
+		foreach (var photo in Model.PassportPhotos)
+		{
+			<dl class="row">
+				<dd class="col-sm-10">@photo</dd>
+			</dl>
+		}
+		
+	}
+
+</div>
+
+<form asp-action="Delete">
+	<input type="hidden" asp-for="Id" />
+	<input type="submit" value="Kustuta Õpilane" class="btn btn-danger" /> | <a asp-action="Index">Tühista</a>
+</form>
