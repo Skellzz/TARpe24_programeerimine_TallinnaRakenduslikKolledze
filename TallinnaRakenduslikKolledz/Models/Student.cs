@@ -9,11 +9,11 @@ namespace TallinnaRakenduslikKolledz.Models
         public string FirstName { get; set; }
         public string LastName { get; set; }
         public DateTime EnrollmentDate { get; set; }
-        public ICollection<Enrollment> Enrollments { get; set; }
+        public ICollection<Enrollment>? Enrollments { get; set; }
 
-        public int Smartnes;
-        public string FunnyJokesMade;
-        public ICollection<PassportPhoto> PassportPhotos;
+        public int? Smartnes;
+        public string? FunnyJokesMade;
+        public ICollection<PassportPhoto>? PassportPhotos;
 
 
 
