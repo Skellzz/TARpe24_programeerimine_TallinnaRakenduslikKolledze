@@ -34,6 +34,14 @@ namespace TallinnaRakenduslikKolledz.Models.Controllers
             return View(student);
 
         }
+        /**/
+
+
+        /// <summary>
+        /// Get Delete view for student
+        /// </summary>
+        /// <param name="id">id of student </param>
+        /// <returns></returns>
         [HttpGet]
         public async Task<IActionResult> Delete(int? id)
         {
@@ -57,6 +65,13 @@ namespace TallinnaRakenduslikKolledz.Models.Controllers
             _context.Students.Remove(student);
             await _context.SaveChangesAsync();
             return RedirectToAction("Index");
+        }
+
+        [HttpGet]
+        public async Task<IActionResult> Details(int? id)
+        { 
+          var student = await _context.Students.FindAsync(id);
+            return View(student);
         }
 
     }
