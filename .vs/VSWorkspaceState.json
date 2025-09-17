@@ -4,7 +4,8 @@
     "\\TallinnaRakenduslikKolledz",
     "\\TallinnaRakenduslikKolledz\\Data",
     "\\TallinnaRakenduslikKolledz\\Models",
-    "\\TallinnaRakenduslikKolledz\\Models\\Controllers"
+    "\\TallinnaRakenduslikKolledz\\Views",
+    "\\TallinnaRakenduslikKolledz\\Views\\Instructors"
   ],
   "SelectedNode": "\\TallinnaRakenduslikKolledz\\TallinnaRakenduslikKolledz.sln",
   "PreviewInSolutionExplorer": false

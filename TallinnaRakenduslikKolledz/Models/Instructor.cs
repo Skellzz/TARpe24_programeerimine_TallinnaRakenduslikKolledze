@@ -1,4 +1,5 @@
 ﻿using System.ComponentModel.DataAnnotations;
+using System.Reflection.Metadata;
 
 namespace TallinnaRakenduslikKolledz.Models
 {
@@ -34,11 +35,11 @@ namespace TallinnaRakenduslikKolledz.Models
         [DataType(DataType.Date)]
         [DisplayFormat(DataFormatString = "{0:yyyy-MM-dd}")]
         [Display(Name = "Tööleasumiskuupäev")]
+
         public DateTime HireDate { get; set; }
 
-        public ICollection<CourseAssignment>? CourseAssigments { get; set; }
-        public OfficeAssignment? OfficeAssignemt { get; set; }
-
+        public ICollection<CourseAssignment>? CourseAssignments { get; set; }
+        public OfficeAssignment? OfficeAssignments { get; set; }
 
         [Required]
         [Display(Name="Palk")]

@@ -8,7 +8,7 @@ namespace TallinnaRakenduslikKolledz.Models
         public int InstructorID{ get; set; }
         public int CourseID { get; set; }
         public Instructor Instructiors { get; set; }
-        public Course Courses { get; set; }
+        public Course Course { get; set; }
 
     }
 }

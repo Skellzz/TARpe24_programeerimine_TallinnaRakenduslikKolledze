@@ -1,4 +1,5 @@
 ﻿@model TallinnaRakenduslikKolledz.Models.InstructorIndexData
+
 @{ ViewData["Title"] = "õpetajad";
 
 }
@@ -15,7 +16,7 @@
 			<th>Kabinet</th>
 			<th>Kursused</th>
 			<th>Hetkel kursuseid:</th>
-			<th>€😈Tööriistad</th>
+			<th>😈Tööriistad</th>
 		</tr>
 	</thead>
 	<tbody>
@@ -30,6 +31,26 @@
 				<td>@Html.DisplayFor(modelItem => instructor.LastName)</td>
 				<td>@Html.DisplayFor(modelItem => instructor.FirstName)</td>
 				<td>@Html.DisplayFor(modelItem => instructor.HireDate)</td>
+				<td>
+					@if (instructor.OfficeAssignments != null)
+					{
+						@instructor.OfficeAssignments.Location
+					}
+				</td>
+				<td>
+					@foreach (var course in instructor.CourseAssignments)
+					{
+						@course.Course @: @course.Course.Title <br/>
+														
+					}
+				</td>
+				<td>@Html.DisplayFor(ModelItem => instructor.Palk)</td>
+				<td>
+					<a asp-action="Edit" asp-route-id="@instructor.ID">Muuda</a> 
+					<a asp-action="Details" asp-route-itemid="@instructor.ID">Vaata</a>
+					<a asp-action="Delete" asp-route-itemid="@instructor.ID">Kustuta</a>
+				</td>
+
 			</tr>
 
 		}
