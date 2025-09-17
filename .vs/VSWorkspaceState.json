@@ -5,7 +5,8 @@
     "\\TallinnaRakenduslikKolledz\\Data",
     "\\TallinnaRakenduslikKolledz\\Models",
     "\\TallinnaRakenduslikKolledz\\Views",
-    "\\TallinnaRakenduslikKolledz\\Views\\Instructors"
+    "\\TallinnaRakenduslikKolledz\\Views\\Instructors",
+    "\\TallinnaRakenduslikKolledz\\Views\\Shared"
   ],
   "SelectedNode": "\\TallinnaRakenduslikKolledz\\TallinnaRakenduslikKolledz.sln",
   "PreviewInSolutionExplorer": false
