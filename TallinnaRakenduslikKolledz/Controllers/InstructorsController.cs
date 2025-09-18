@@ -25,7 +25,7 @@ namespace TallinnaRakenduslikKolledz.Controllers
 
         }
 
-        [HttpPost]
+        [HttpGet]
         public IActionResult Create()
         {
             var instructor = new Instructor();
@@ -47,21 +47,23 @@ namespace TallinnaRakenduslikKolledz.Controllers
                         CourseID = course
                     };
                     instructor.CourseAssignments.Add(courseToAdd);
-                }
-                if (ModelState.IsValid)
-                { 
-                     _context.Add(instructor);
-                    await _context.SaveChangesAsync();
-                    return RedirectToAction(nameof(Index));
-                }
-                PopulateAssignedCourseData(instructor); 
-               
+                }             
             }
+            ModelState.Remove("selectedCourses");
+            if (ModelState.IsValid)
+            {
+                _context.Add(instructor);
+                await _context.SaveChangesAsync();
+                return RedirectToAction(nameof(Index));
+            }
+            //PopulateAssignedCourseData(instructor); 
             return View(instructor);
+
         }
         private void PopulateAssignedCourseData(Instructor instructor)
         {
             var allCourses = _context.Courses; //leiame
+
             var instructorCourses = new HashSet<int>(instructor.CourseAssignments.Select(c => c.CourseID));
             // valime kursused kus coureid on õpetajal olemas
             var vm = new List<AssignCourseData>();
