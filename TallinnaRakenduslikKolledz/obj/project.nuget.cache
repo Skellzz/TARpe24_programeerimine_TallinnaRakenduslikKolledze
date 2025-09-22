@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "cuu6RuHa2Z4=",
+  "dgSpecHash": "fm6qEj0mfRM=",
   "success": true,
-  "projectFilePath": "C:\\Users\\opilane\\Downloads\\Kalkulaator\\ViktorMIngazov\\TARpe24_programeerimine_TallinnaRakenduslikKolledze\\TallinnaRakenduslikKolledz\\TallinnaRakenduslikKolledz.csproj",
+  "projectFilePath": "C:\\Users\\opilane\\source\\repos\\TARpe24_programeerimine_TallinnaRakenduslikKolledze\\TallinnaRakenduslikKolledz\\TallinnaRakenduslikKolledz.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\opilane\\.nuget\\packages\\azure.core\\1.38.0\\azure.core.1.38.0.nupkg.sha512",
     "C:\\Users\\opilane\\.nuget\\packages\\azure.identity\\1.11.4\\azure.identity.1.11.4.nupkg.sha512",
