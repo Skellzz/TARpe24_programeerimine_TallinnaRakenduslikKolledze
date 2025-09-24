@@ -7,6 +7,7 @@
   
     public class Enrollment
     {
+        public int StudentID { get; set; }
         public int EnrollmentID { get; set; }
         public int CourseID { get; set; }
         public int stdentID { get; set; }
