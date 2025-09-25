@@ -1,7 +1,9 @@
 using Microsoft.EntityFrameworkCore;
 
-
-
+internal class Program
+{
+    private static void Main(string[] args)
+    {
         var builder = WebApplication.CreateBuilder(args);
 
         // Add services to the container.
@@ -11,6 +13,8 @@ using Microsoft.EntityFrameworkCore;
         builder.Services.AddDatabaseDeveloperPageExceptionFilter();
 
         var app = builder.Build();
+        CreateDbIFNotExists(app);
+
 
         // Configure the HTTP request pipeline.
         if (!app.Environment.IsDevelopment())
@@ -32,3 +36,24 @@ using Microsoft.EntityFrameworkCore;
         pattern: "{controller=Home}/{action=Index}/{id?}");
 
         app.Run();
+        
+    }
+    private static void CreateDbIFNotExists(IHost app)
+    {
+        using (var scope = app.Services.CreateScope())
+        { 
+            var services = scope.ServiceProvider;
+            try
+            {
+                var context = services.GetRequiredService<SchoolContext>();
+                DbInitalizer.Initalize(context);
+
+            }
+            catch (Exception ex)
+            {
+                var logger = services.GetRequiredService<ILogger<Program>>();
+                logger.LogError(ex, "An error occurred creating the DB.");
+            }
+        }
+    }
+}

@@ -1,0 +1,82 @@
+﻿@model TallinnaRakenduslikKolledz.Models.Department
+
+
+
+<body>
+
+	@{
+		ViewData["Title"] = "Kustuta Osakond";
+	}
+	<h2>@Html.DisplayFor(modelItem => Model.Name)</h2>
+
+	<div>
+		
+		
+		
+		@if (ViewBag.Vaatetüüp == "Delete")
+		{
+			<p>
+				<h3>Kustuta osakond:</h3>
+			</p>
+
+			<h4>Olete kindel, et soovite kustutada selle osakonna?</h4>
+			<hr />
+			<dl class="row">
+				<dt class="col-sm-2">@Html.DisplayNameFor(Model => Model.Name)</dt>
+				<dt class="col-sm-2">@Html.DisplayFor(Model => Model.Name)</dt>
+				<dt class="col-sm-2">@Html.DisplayNameFor(Model => Model.DepartmentID)</dt>
+				<dt class="col-sm-2">@Html.DisplayFor(Model => Model.DepartmentID)</dt>
+				<dt class="col-sm-2">@Html.DisplayNameFor(Model => Model.InstructorID)</dt>
+				<dt class="col-sm-2">@Html.DisplayFor(Model => Model.InstructorID)</dt>
+				<dt class="col-sm-2">@Html.DisplayNameFor(Model => Model.Budget)</dt>
+				<dt class="col-sm-2">@Html.DisplayFor(Model => Model.Budget)</dt>
+				<dt class="col-sm-2">@Html.DisplayNameFor(Model => Model.StartDate)</dt>
+				<dt class="col-sm-2">@Html.DisplayFor(Model => Model.StartDate)</dt>
+				<dt class="col-sm-2">@Html.DisplayNameFor(Model => Model.Aadress)</dt>
+				<dt class="col-sm-2">@Html.DisplayFor(Model => Model.Aadress)</dt>
+				<dt class="col-sm-2">@Html.DisplayNameFor(Model => Model.PhoneNumber)</dt>
+				<dt class="col-sm-2">@Html.DisplayFor(Model => Model.PhoneNumber)</dt>
+				<dt class="col-sm-2">@Html.DisplayNameFor(Model => Model.Email)</dt>
+				<dt class="col-sm-2">@Html.DisplayFor(Model => Model.Email)</dt>
+			</dl>
+			<form asp-action="Delete">
+				<input type="hidden" asp-for="DepartmentID" />
+				<input type="hidden" asp-for="RowVersion" />
+				<input type="submit" value="Kustuta" class="btn btn-danger" /> |
+				<a asp-action="Index">Tagasi Osakondade nimekirja</a>
+			</form>
+		}
+		else if (ViewBag.Vaatetüüp == "Details")
+		{
+			<p>
+				<h3>Vaata osakonda:</h3>
+			</p>
+			<dl class="row">
+				<dt class="col-sm-2">@Html.DisplayNameFor(Model => Model.Name)</dt>
+				<dt class="col-sm-2">@Html.DisplayFor(Model => Model.Name)</dt>
+				<dt class="col-sm-2">@Html.DisplayNameFor(Model => Model.DepartmentID)</dt>
+				<dt class="col-sm-2">@Html.DisplayFor(Model => Model.DepartmentID)</dt>
+				<dt class="col-sm-2">@Html.DisplayNameFor(Model => Model.InstructorID)</dt>
+				<dt class="col-sm-2">@Html.DisplayFor(Model => Model.InstructorID)</dt>
+				<dt class="col-sm-2">@Html.DisplayNameFor(Model => Model.Budget)</dt>
+				<dt class="col-sm-2">@Html.DisplayFor(Model => Model.Budget)</dt>
+				<dt class="col-sm-2">@Html.DisplayNameFor(Model => Model.StartDate)</dt>
+				<dt class="col-sm-2">@Html.DisplayFor(Model => Model.StartDate)</dt>
+				<dt class="col-sm-2">@Html.DisplayNameFor(Model => Model.Aadress)</dt>
+				<dt class="col-sm-2">@Html.DisplayFor(Model => Model.Aadress)</dt>
+				<dt class="col-sm-2">@Html.DisplayNameFor(Model => Model.PhoneNumber)</dt>
+				<dt class="col-sm-2">@Html.DisplayFor(Model => Model.PhoneNumber)</dt>
+				<dt class="col-sm-2">@Html.DisplayNameFor(Model => Model.Email)</dt>
+				<dt class="col-sm-2">@Html.DisplayFor(Model => Model.Email)</dt>
+			</dl>
+			
+		}
+
+		
+
+
+	</div>
+
+
+
+</body>

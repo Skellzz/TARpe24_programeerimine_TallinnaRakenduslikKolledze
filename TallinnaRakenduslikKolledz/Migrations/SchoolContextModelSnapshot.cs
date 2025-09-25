@@ -102,8 +102,8 @@ namespace TallinnaRakenduslikKolledz.Migrations
                     b.Property<byte?>("RowVersion")
                         .HasColumnType("tinyint");
 
-                    b.Property<int>("StartDate")
-                        .HasColumnType("int");
+                    b.Property<DateTime>("StartDate")
+                        .HasColumnType("datetime2");
 
                     b.HasKey("DepartmentID");
 
@@ -126,7 +126,7 @@ namespace TallinnaRakenduslikKolledz.Migrations
                     b.Property<int>("CurrentGrade")
                         .HasColumnType("int");
 
-                    b.Property<int>("StudentId")
+                    b.Property<int>("StudentID")
                         .HasColumnType("int");
 
                     b.Property<int>("stdentID")
@@ -136,7 +136,7 @@ namespace TallinnaRakenduslikKolledz.Migrations
 
                     b.HasIndex("CourseID");
 
-                    b.HasIndex("StudentId");
+                    b.HasIndex("StudentID");
 
                     b.ToTable("Enrollment", (string)null);
                 });
@@ -275,7 +275,7 @@ namespace TallinnaRakenduslikKolledz.Migrations
 
                     b.HasOne("TallinnaRakenduslikKolledz.Models.Student", "Student")
                         .WithMany("Enrollments")
-                        .HasForeignKey("StudentId")
+                        .HasForeignKey("StudentID")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 

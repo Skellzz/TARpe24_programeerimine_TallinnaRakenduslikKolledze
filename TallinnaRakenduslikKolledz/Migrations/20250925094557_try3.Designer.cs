@@ -11,8 +11,8 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace TallinnaRakenduslikKolledz.Migrations
 {
     [DbContext(typeof(SchoolContext))]
-    [Migration("20250922112852_Whaatatatat")]
-    partial class Whaatatatat
+    [Migration("20250925094557_try3")]
+    partial class try3
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -35,11 +35,16 @@ namespace TallinnaRakenduslikKolledz.Migrations
                     b.Property<int>("Credits")
                         .HasColumnType("int");
 
+                    b.Property<int?>("DepartmentID")
+                        .HasColumnType("int");
+
                     b.Property<string>("Title")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
                     b.HasKey("CourseID");
+
+                    b.HasIndex("DepartmentID");
 
                     b.ToTable("Course", (string)null);
                 });
@@ -67,6 +72,49 @@ namespace TallinnaRakenduslikKolledz.Migrations
                     b.ToTable("CourseAssignment", (string)null);
                 });
 
+            modelBuilder.Entity("TallinnaRakenduslikKolledz.Models.Department", b =>
+                {
+                    b.Property<int>("DepartmentID")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("DepartmentID"));
+
+                    b.Property<string>("Aadress")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<decimal>("Budget")
+                        .HasColumnType("decimal(18,2)");
+
+                    b.Property<string>("Email")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<int?>("InstructorID")
+                        .HasColumnType("int");
+
+                    b.Property<string>("Name")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("PhoneNumber")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<byte?>("RowVersion")
+                        .HasColumnType("tinyint");
+
+                    b.Property<DateTime>("StartDate")
+                        .HasColumnType("datetime2");
+
+                    b.HasKey("DepartmentID");
+
+                    b.HasIndex("InstructorID");
+
+                    b.ToTable("Department", (string)null);
+                });
+
             modelBuilder.Entity("TallinnaRakenduslikKolledz.Models.Enrollment", b =>
                 {
                     b.Property<int>("EnrollmentID")
@@ -81,7 +129,7 @@ namespace TallinnaRakenduslikKolledz.Migrations
                     b.Property<int>("CurrentGrade")
                         .HasColumnType("int");
 
-                    b.Property<int>("StudentId")
+                    b.Property<int>("StudentID")
                         .HasColumnType("int");
 
                     b.Property<int>("stdentID")
@@ -91,7 +139,7 @@ namespace TallinnaRakenduslikKolledz.Migrations
 
                     b.HasIndex("CourseID");
 
-                    b.HasIndex("StudentId");
+                    b.HasIndex("StudentID");
 
                     b.ToTable("Enrollment", (string)null);
                 });
@@ -185,6 +233,13 @@ namespace TallinnaRakenduslikKolledz.Migrations
                     b.ToTable("Student", (string)null);
                 });
 
+            modelBuilder.Entity("TallinnaRakenduslikKolledz.Models.Course", b =>
+                {
+                    b.HasOne("TallinnaRakenduslikKolledz.Models.Department", null)
+                        .WithMany("Courses")
+                        .HasForeignKey("DepartmentID");
+                });
+
             modelBuilder.Entity("TallinnaRakenduslikKolledz.Models.CourseAssignment", b =>
                 {
                     b.HasOne("TallinnaRakenduslikKolledz.Models.Course", "Course")
@@ -204,6 +259,15 @@ namespace TallinnaRakenduslikKolledz.Migrations
                     b.Navigation("Instructiors");
                 });
 
+            modelBuilder.Entity("TallinnaRakenduslikKolledz.Models.Department", b =>
+                {
+                    b.HasOne("TallinnaRakenduslikKolledz.Models.Instructor", "Administrator")
+                        .WithMany()
+                        .HasForeignKey("InstructorID");
+
+                    b.Navigation("Administrator");
+                });
+
             modelBuilder.Entity("TallinnaRakenduslikKolledz.Models.Enrollment", b =>
                 {
                     b.HasOne("TallinnaRakenduslikKolledz.Models.Course", "Course")
@@ -214,7 +278,7 @@ namespace TallinnaRakenduslikKolledz.Migrations
 
                     b.HasOne("TallinnaRakenduslikKolledz.Models.Student", "Student")
                         .WithMany("Enrollments")
-                        .HasForeignKey("StudentId")
+                        .HasForeignKey("StudentID")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
@@ -237,6 +301,11 @@ namespace TallinnaRakenduslikKolledz.Migrations
             modelBuilder.Entity("TallinnaRakenduslikKolledz.Models.Course", b =>
                 {
                     b.Navigation("Enrollments");
+                });
+
+            modelBuilder.Entity("TallinnaRakenduslikKolledz.Models.Department", b =>
+                {
+                    b.Navigation("Courses");
                 });
 
             modelBuilder.Entity("TallinnaRakenduslikKolledz.Models.Instructor", b =>
