@@ -3,32 +3,28 @@
   "WorkspaceRootPath": "C:\\Users\\Admin\\source\\repos\\TARpe24_programeerimine_TallinnaRakenduslikKolledze\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{ED550561-E8B9-45E0-BF36-6A0CB96B7904}|TallinnaRakenduslikKolledz\\TallinnaRakenduslikKolledz.csproj|c:\\users\\admin\\source\\repos\\tarpe24_programeerimine_tallinnarakenduslikkolledze\\tallinnarakenduslikkolledz\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{ED550561-E8B9-45E0-BF36-6A0CB96B7904}|TallinnaRakenduslikKolledz\\TallinnaRakenduslikKolledz.csproj|solutionrelative:tallinnarakenduslikkolledz\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Admin\\source\\repos\\TARpe24_programeerimine_TallinnaRakenduslikKolledze\\TallinnaRakenduslikKolledz\\Migrations\\20250925133328_coursechange.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:TallinnaRakenduslikKolledz\\Migrations\\20250925133328_coursechange.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{ED550561-E8B9-45E0-BF36-6A0CB96B7904}|TallinnaRakenduslikKolledz\\TallinnaRakenduslikKolledz.csproj|c:\\users\\admin\\source\\repos\\tarpe24_programeerimine_tallinnarakenduslikkolledze\\tallinnarakenduslikkolledz\\models\\course.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{ED550561-E8B9-45E0-BF36-6A0CB96B7904}|TallinnaRakenduslikKolledz\\TallinnaRakenduslikKolledz.csproj|solutionrelative:tallinnarakenduslikkolledz\\models\\course.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{ED550561-E8B9-45E0-BF36-6A0CB96B7904}|TallinnaRakenduslikKolledz\\TallinnaRakenduslikKolledz.csproj|c:\\users\\admin\\source\\repos\\tarpe24_programeerimine_tallinnarakenduslikkolledze\\tallinnarakenduslikkolledz\\views\\courses\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{ED550561-E8B9-45E0-BF36-6A0CB96B7904}|TallinnaRakenduslikKolledz\\TallinnaRakenduslikKolledz.csproj|solutionrelative:tallinnarakenduslikkolledz\\views\\courses\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Admin\\source\\repos\\TARpe24_programeerimine_TallinnaRakenduslikKolledze\\TallinnaRakenduslikKolledz\\Migrations\\20250929110908_Nimi.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:TallinnaRakenduslikKolledz\\Migrations\\20250929110908_Nimi.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{ED550561-E8B9-45E0-BF36-6A0CB96B7904}|TallinnaRakenduslikKolledz\\TallinnaRakenduslikKolledz.csproj|c:\\users\\admin\\source\\repos\\tarpe24_programeerimine_tallinnarakenduslikkolledze\\tallinnarakenduslikkolledz\\controllers\\coursescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{ED550561-E8B9-45E0-BF36-6A0CB96B7904}|TallinnaRakenduslikKolledz\\TallinnaRakenduslikKolledz.csproj|solutionrelative:tallinnarakenduslikkolledz\\controllers\\coursescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{ED550561-E8B9-45E0-BF36-6A0CB96B7904}|TallinnaRakenduslikKolledz\\TallinnaRakenduslikKolledz.csproj|c:\\users\\admin\\source\\repos\\tarpe24_programeerimine_tallinnarakenduslikkolledze\\tallinnarakenduslikkolledz\\models\\instructor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{ED550561-E8B9-45E0-BF36-6A0CB96B7904}|TallinnaRakenduslikKolledz\\TallinnaRakenduslikKolledz.csproj|solutionrelative:tallinnarakenduslikkolledz\\models\\instructor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{ED550561-E8B9-45E0-BF36-6A0CB96B7904}|TallinnaRakenduslikKolledz\\TallinnaRakenduslikKolledz.csproj|c:\\users\\admin\\source\\repos\\tarpe24_programeerimine_tallinnarakenduslikkolledze\\tallinnarakenduslikkolledz\\controllers\\departmentscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{ED550561-E8B9-45E0-BF36-6A0CB96B7904}|TallinnaRakenduslikKolledz\\TallinnaRakenduslikKolledz.csproj|solutionrelative:tallinnarakenduslikkolledz\\controllers\\departmentscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{ED550561-E8B9-45E0-BF36-6A0CB96B7904}|TallinnaRakenduslikKolledz\\TallinnaRakenduslikKolledz.csproj|c:\\users\\admin\\source\\repos\\tarpe24_programeerimine_tallinnarakenduslikkolledze\\tallinnarakenduslikkolledz\\controllers\\instructorscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{ED550561-E8B9-45E0-BF36-6A0CB96B7904}|TallinnaRakenduslikKolledz\\TallinnaRakenduslikKolledz.csproj|solutionrelative:tallinnarakenduslikkolledz\\controllers\\instructorscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{ED550561-E8B9-45E0-BF36-6A0CB96B7904}|TallinnaRakenduslikKolledz\\TallinnaRakenduslikKolledz.csproj|c:\\users\\admin\\source\\repos\\tarpe24_programeerimine_tallinnarakenduslikkolledze\\tallinnarakenduslikkolledz\\views\\departments\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{ED550561-E8B9-45E0-BF36-6A0CB96B7904}|TallinnaRakenduslikKolledz\\TallinnaRakenduslikKolledz.csproj|solutionrelative:tallinnarakenduslikkolledz\\views\\departments\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{ED550561-E8B9-45E0-BF36-6A0CB96B7904}|TallinnaRakenduslikKolledz\\TallinnaRakenduslikKolledz.csproj|c:\\users\\admin\\source\\repos\\tarpe24_programeerimine_tallinnarakenduslikkolledze\\tallinnarakenduslikkolledz\\views\\instructors\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{ED550561-E8B9-45E0-BF36-6A0CB96B7904}|TallinnaRakenduslikKolledz\\TallinnaRakenduslikKolledz.csproj|solutionrelative:tallinnarakenduslikkolledz\\views\\instructors\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     }
   ],
   "DocumentGroupContainers": [
@@ -42,13 +38,13 @@
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 3,
               "Title": "DepartmentsController.cs",
               "DocumentMoniker": "C:\\Users\\Admin\\source\\repos\\TARpe24_programeerimine_TallinnaRakenduslikKolledze\\TallinnaRakenduslikKolledz\\Controllers\\DepartmentsController.cs",
               "RelativeDocumentMoniker": "TallinnaRakenduslikKolledz\\Controllers\\DepartmentsController.cs",
               "ToolTip": "C:\\Users\\Admin\\source\\repos\\TARpe24_programeerimine_TallinnaRakenduslikKolledze\\TallinnaRakenduslikKolledz\\Controllers\\DepartmentsController.cs",
               "RelativeToolTip": "TallinnaRakenduslikKolledz\\Controllers\\DepartmentsController.cs",
-              "ViewState": "AgIAAEcAAAAAAAAAAAAuwFAAAAAuAAAAAAAAAA==",
+              "ViewState": "AgIAABMAAAAAAAAAAAAIwBMAAAA7AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-09-25T09:58:12.842Z",
               "IsPinned": true,
@@ -105,79 +101,66 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "_Layout.cshtml",
-              "DocumentMoniker": "C:\\Users\\Admin\\source\\repos\\TARpe24_programeerimine_TallinnaRakenduslikKolledze\\TallinnaRakenduslikKolledz\\Views\\Shared\\_Layout.cshtml",
-              "RelativeDocumentMoniker": "TallinnaRakenduslikKolledz\\Views\\Shared\\_Layout.cshtml",
-              "ToolTip": "C:\\Users\\Admin\\source\\repos\\TARpe24_programeerimine_TallinnaRakenduslikKolledze\\TallinnaRakenduslikKolledz\\Views\\Shared\\_Layout.cshtml",
-              "RelativeToolTip": "TallinnaRakenduslikKolledz\\Views\\Shared\\_Layout.cshtml",
-              "ViewState": "AgIAABIAAAAAAAAAAAAAACsAAAAZAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-09-25T13:33:59.442Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "20250925133328_coursechange.cs",
-              "DocumentMoniker": "C:\\Users\\Admin\\source\\repos\\TARpe24_programeerimine_TallinnaRakenduslikKolledze\\TallinnaRakenduslikKolledz\\Migrations\\20250925133328_coursechange.cs",
-              "RelativeDocumentMoniker": "TallinnaRakenduslikKolledz\\Migrations\\20250925133328_coursechange.cs",
-              "ToolTip": "C:\\Users\\Admin\\source\\repos\\TARpe24_programeerimine_TallinnaRakenduslikKolledze\\TallinnaRakenduslikKolledz\\Migrations\\20250925133328_coursechange.cs",
-              "RelativeToolTip": "TallinnaRakenduslikKolledz\\Migrations\\20250925133328_coursechange.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Title": "20250929110908_Nimi.cs",
+              "DocumentMoniker": "C:\\Users\\Admin\\source\\repos\\TARpe24_programeerimine_TallinnaRakenduslikKolledze\\TallinnaRakenduslikKolledz\\Migrations\\20250929110908_Nimi.cs",
+              "RelativeDocumentMoniker": "TallinnaRakenduslikKolledz\\Migrations\\20250929110908_Nimi.cs",
+              "ToolTip": "C:\\Users\\Admin\\source\\repos\\TARpe24_programeerimine_TallinnaRakenduslikKolledze\\TallinnaRakenduslikKolledz\\Migrations\\20250929110908_Nimi.cs",
+              "RelativeToolTip": "TallinnaRakenduslikKolledz\\Migrations\\20250929110908_Nimi.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-25T13:33:28.209Z",
+              "WhenOpened": "2025-09-29T11:09:08.186Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "Course.cs",
-              "DocumentMoniker": "C:\\Users\\Admin\\source\\repos\\TARpe24_programeerimine_TallinnaRakenduslikKolledze\\TallinnaRakenduslikKolledz\\Models\\Course.cs",
-              "RelativeDocumentMoniker": "TallinnaRakenduslikKolledz\\Models\\Course.cs",
-              "ToolTip": "C:\\Users\\Admin\\source\\repos\\TARpe24_programeerimine_TallinnaRakenduslikKolledze\\TallinnaRakenduslikKolledz\\Models\\Course.cs",
-              "RelativeToolTip": "TallinnaRakenduslikKolledz\\Models\\Course.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAATAAAAAAAAAA==",
+              "Title": "Instructor.cs",
+              "DocumentMoniker": "C:\\Users\\Admin\\source\\repos\\TARpe24_programeerimine_TallinnaRakenduslikKolledze\\TallinnaRakenduslikKolledz\\Models\\Instructor.cs",
+              "RelativeDocumentMoniker": "TallinnaRakenduslikKolledz\\Models\\Instructor.cs",
+              "ToolTip": "C:\\Users\\Admin\\source\\repos\\TARpe24_programeerimine_TallinnaRakenduslikKolledze\\TallinnaRakenduslikKolledz\\Models\\Instructor.cs",
+              "RelativeToolTip": "TallinnaRakenduslikKolledz\\Models\\Instructor.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-25T13:32:44.577Z",
+              "WhenOpened": "2025-09-29T11:05:43.846Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "Create.cshtml",
-              "DocumentMoniker": "C:\\Users\\Admin\\source\\repos\\TARpe24_programeerimine_TallinnaRakenduslikKolledze\\TallinnaRakenduslikKolledz\\Views\\Courses\\Create.cshtml",
-              "RelativeDocumentMoniker": "TallinnaRakenduslikKolledz\\Views\\Courses\\Create.cshtml",
-              "ToolTip": "C:\\Users\\Admin\\source\\repos\\TARpe24_programeerimine_TallinnaRakenduslikKolledze\\TallinnaRakenduslikKolledz\\Views\\Courses\\Create.cshtml",
-              "RelativeToolTip": "TallinnaRakenduslikKolledz\\Views\\Courses\\Create.cshtml",
-              "ViewState": "AgIAAAkAAAAAAAAAAAAqwB8AAABHAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-09-25T13:23:15.56Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 1,
               "Title": "CoursesController.cs",
               "DocumentMoniker": "C:\\Users\\Admin\\source\\repos\\TARpe24_programeerimine_TallinnaRakenduslikKolledze\\TallinnaRakenduslikKolledz\\Controllers\\CoursesController.cs",
               "RelativeDocumentMoniker": "TallinnaRakenduslikKolledz\\Controllers\\CoursesController.cs",
               "ToolTip": "C:\\Users\\Admin\\source\\repos\\TARpe24_programeerimine_TallinnaRakenduslikKolledze\\TallinnaRakenduslikKolledz\\Controllers\\CoursesController.cs",
               "RelativeToolTip": "TallinnaRakenduslikKolledz\\Controllers\\CoursesController.cs",
-              "ViewState": "AgIAAAkAAAAAAAAAAAAAwCAAAAB/AAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAwAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-25T12:53:25.547Z",
+              "WhenOpened": "2025-09-29T10:18:48.103Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "InstructorsController.cs",
-              "DocumentMoniker": "C:\\Users\\Admin\\source\\repos\\TARpe24_programeerimine_TallinnaRakenduslikKolledze\\TallinnaRakenduslikKolledz\\Controllers\\InstructorsController.cs",
-              "RelativeDocumentMoniker": "TallinnaRakenduslikKolledz\\Controllers\\InstructorsController.cs",
-              "ToolTip": "C:\\Users\\Admin\\source\\repos\\TARpe24_programeerimine_TallinnaRakenduslikKolledze\\TallinnaRakenduslikKolledz\\Controllers\\InstructorsController.cs",
-              "RelativeToolTip": "TallinnaRakenduslikKolledz\\Controllers\\InstructorsController.cs",
-              "ViewState": "AgIAAGcAAAAAAAAAAAAwwG8AAAAIAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-25T12:47:05.571Z",
+              "DocumentIndex": 5,
+              "Title": "Edit.cshtml",
+              "DocumentMoniker": "C:\\Users\\Admin\\source\\repos\\TARpe24_programeerimine_TallinnaRakenduslikKolledze\\TallinnaRakenduslikKolledz\\Views\\Instructors\\Edit.cshtml",
+              "RelativeDocumentMoniker": "TallinnaRakenduslikKolledz\\Views\\Instructors\\Edit.cshtml",
+              "ToolTip": "C:\\Users\\Admin\\source\\repos\\TARpe24_programeerimine_TallinnaRakenduslikKolledze\\TallinnaRakenduslikKolledz\\Views\\Instructors\\Edit.cshtml",
+              "RelativeToolTip": "TallinnaRakenduslikKolledz\\Views\\Instructors\\Edit.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-09-29T10:15:59.836Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Create.cshtml",
+              "DocumentMoniker": "C:\\Users\\Admin\\source\\repos\\TARpe24_programeerimine_TallinnaRakenduslikKolledze\\TallinnaRakenduslikKolledz\\Views\\Departments\\Create.cshtml",
+              "RelativeDocumentMoniker": "TallinnaRakenduslikKolledz\\Views\\Departments\\Create.cshtml",
+              "ToolTip": "C:\\Users\\Admin\\source\\repos\\TARpe24_programeerimine_TallinnaRakenduslikKolledze\\TallinnaRakenduslikKolledz\\Views\\Departments\\Create.cshtml",
+              "RelativeToolTip": "TallinnaRakenduslikKolledz\\Views\\Departments\\Create.cshtml",
+              "ViewState": "AgIAAHUAAAAAAAAAAAAAAFEAAAAbAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-09-29T10:08:09.135Z",
               "EditorCaption": ""
             }
           ]

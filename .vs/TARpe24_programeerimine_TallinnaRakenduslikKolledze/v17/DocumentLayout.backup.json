@@ -38,7 +38,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 16,
+          "SelectedChildIndex": 14,
           "Children": [
             {
               "$type": "Bookmark",
@@ -90,18 +90,6 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "_Layout.cshtml",
-              "DocumentMoniker": "C:\\Users\\Admin\\source\\repos\\TARpe24_programeerimine_TallinnaRakenduslikKolledze\\TallinnaRakenduslikKolledz\\Views\\Shared\\_Layout.cshtml",
-              "RelativeDocumentMoniker": "TallinnaRakenduslikKolledz\\Views\\Shared\\_Layout.cshtml",
-              "ToolTip": "C:\\Users\\Admin\\source\\repos\\TARpe24_programeerimine_TallinnaRakenduslikKolledze\\TallinnaRakenduslikKolledz\\Views\\Shared\\_Layout.cshtml",
-              "RelativeToolTip": "TallinnaRakenduslikKolledz\\Views\\Shared\\_Layout.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAC0AAAB8AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-09-17T09:55:17.558Z"
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 3,
               "Title": "Index.cshtml",
               "DocumentMoniker": "C:\\Users\\Admin\\source\\repos\\TARpe24_programeerimine_TallinnaRakenduslikKolledze\\TallinnaRakenduslikKolledz\\Views\\Instructors\\Index.cshtml",
@@ -126,6 +114,31 @@
             },
             {
               "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "DbInitalizer.cs",
+              "DocumentMoniker": "C:\\Users\\Admin\\source\\repos\\TARpe24_programeerimine_TallinnaRakenduslikKolledze\\TallinnaRakenduslikKolledz\\Data\\DbInitalizer.cs",
+              "RelativeDocumentMoniker": "TallinnaRakenduslikKolledz\\Data\\DbInitalizer.cs",
+              "ToolTip": "C:\\Users\\Admin\\source\\repos\\TARpe24_programeerimine_TallinnaRakenduslikKolledze\\TallinnaRakenduslikKolledz\\Data\\DbInitalizer.cs",
+              "RelativeToolTip": "TallinnaRakenduslikKolledz\\Data\\DbInitalizer.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAAB0AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-04T10:16:29.15Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "_Layout.cshtml",
+              "DocumentMoniker": "C:\\Users\\Admin\\source\\repos\\TARpe24_programeerimine_TallinnaRakenduslikKolledze\\TallinnaRakenduslikKolledz\\Views\\Shared\\_Layout.cshtml",
+              "RelativeDocumentMoniker": "TallinnaRakenduslikKolledz\\Views\\Shared\\_Layout.cshtml",
+              "ToolTip": "C:\\Users\\Admin\\source\\repos\\TARpe24_programeerimine_TallinnaRakenduslikKolledze\\TallinnaRakenduslikKolledz\\Views\\Shared\\_Layout.cshtml",
+              "RelativeToolTip": "TallinnaRakenduslikKolledz\\Views\\Shared\\_Layout.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAC0AAAB8AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-09-17T09:55:17.558Z"
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 1,
               "Title": "appsettings.json",
               "DocumentMoniker": "C:\\Users\\Admin\\source\\repos\\TARpe24_programeerimine_TallinnaRakenduslikKolledze\\TallinnaRakenduslikKolledz\\appsettings.json",
@@ -135,19 +148,6 @@
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
               "WhenOpened": "2025-09-05T07:23:54.195Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "DbInitalizer.cs",
-              "DocumentMoniker": "C:\\Users\\Admin\\source\\repos\\TARpe24_programeerimine_TallinnaRakenduslikKolledze\\TallinnaRakenduslikKolledz\\Data\\DbInitalizer.cs",
-              "RelativeDocumentMoniker": "TallinnaRakenduslikKolledz\\Data\\DbInitalizer.cs",
-              "ToolTip": "C:\\Users\\Admin\\source\\repos\\TARpe24_programeerimine_TallinnaRakenduslikKolledze\\TallinnaRakenduslikKolledz\\Data\\DbInitalizer.cs",
-              "RelativeToolTip": "TallinnaRakenduslikKolledz\\Data\\DbInitalizer.cs",
-              "ViewState": "AgIAAAYAAAAAAAAAAAAAAB0AAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-04T10:16:29.15Z",
-              "EditorCaption": ""
             },
             {
               "$type": "Document",

@@ -1,6 +1,7 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
+using TallinnaRakenduslikKolledz.Models;
 
 namespace TallinnaRakenduslikKolledz.Controllers
 {
@@ -24,7 +25,52 @@ namespace TallinnaRakenduslikKolledz.Controllers
             PopulateDepartmentDropDownList();
             return View();
         }
-
+        [HttpPost]
+        [ValidateAntiForgeryToken]
+        public async Task<IActionResult> Create (Course course)
+        {
+            if (!ModelState.IsValid)
+            {
+                _context.Add(course);
+                await _context.SaveChangesAsync();
+                PopulateDepartmentDropDownList(course.DepartmentID);
+                
+            }
+            return RedirectToAction(nameof(Index));
+        }
+        [HttpGet]
+        public async Task<IActionResult> Delete(int? id)
+        {
+            if (id == null || _context.Courses == null)
+            {
+                return NotFound();
+            }
+            var course = await _context.Courses
+                .Include(c => c.Department)
+                .AsNoTracking()
+                .FirstOrDefaultAsync(m => m.CourseID == id);
+            if (course == null)
+            {
+                return NotFound();
+            }
+            return View(course);
+        }
+        [HttpPost, ActionName("Delete")]
+        [ValidateAntiForgeryToken]
+        public async Task<IActionResult> DeleteConfirmed(int id)
+        {
+            if (_context.Courses == null)
+            {
+                return NotFound();
+            }
+            var course = await _context.Courses.FindAsync(id);
+            if (course != null)
+            { 
+                _context.Courses.Remove(course);
+            }
+            await _context.SaveChangesAsync();
+            return RedirectToAction(nameof(Index));
+        }
         private void PopulateDepartmentDropDownList(object selectedDepartment = null)
         {
             var departmentsQuery = from d in _context.Departments

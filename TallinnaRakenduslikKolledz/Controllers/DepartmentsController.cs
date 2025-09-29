@@ -23,6 +23,7 @@ namespace TallinnaRakenduslikKolledz.Controllers
         [HttpGet]
         public IActionResult Create()
         {
+            ViewData["Vaatetüüp"] = "Create";
             ViewData["InstructorID"] = new SelectList(_context.Instructors, "ID", "FullName");
             //ViewData["StudentId"] = new SelectList (_context.Instructors, "Id", "LastName", "FirstName");
             return View();
@@ -38,6 +39,7 @@ namespace TallinnaRakenduslikKolledz.Controllers
                 return RedirectToAction("Index");
             }
             ViewData["InstructorID"] = new SelectList(_context.Instructors, "ID", "FullName", department.InstructorID);
+            
             //ViewData["CourseStatus"] = new SelectList(_context.Instructors, "Id", "LastName", "FirstName", department.InstructorID);
 
             return View();
