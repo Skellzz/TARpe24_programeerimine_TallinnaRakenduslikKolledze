@@ -33,11 +33,14 @@
 			<tr>
 				@Html.DisplayFor(modelItem => course.Department.Name)
 			</tr>
-			<tr>
+			@* <tr>
 				@Html.DisplayFor(modelItem => course.Department.Administrator.FullName)
-			</tr>
+			</tr>  *@
 			<tr>
 				<a asp-action="Delete" asp-route-id="@course.CourseID">Kustuta</a>
+				<a asp-action="Edit" asp-route-id="@course.CourseID">Muuda</a>
+				<a asp-action="Details" asp-route-id="@course.CourseID">Vaata</a>
+				
 			</tr>
 		}
 

@@ -29,15 +29,16 @@ namespace TallinnaRakenduslikKolledz.Controllers
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> Create (Course course)
         {
-            if (!ModelState.IsValid)
+            if (ModelState.IsValid)
             {
                 _context.Add(course);
                 await _context.SaveChangesAsync();
-                PopulateDepartmentDropDownList(course.DepartmentID);
+               // PopulateDepartmentDropDownList(course.DepartmentID);
                 
             }
             return RedirectToAction(nameof(Index));
         }
+
         [HttpGet]
         public async Task<IActionResult> Delete(int? id)
         {
@@ -45,6 +46,7 @@ namespace TallinnaRakenduslikKolledz.Controllers
             {
                 return NotFound();
             }
+            ViewData["Vaatetüüp"] = "Delete";
             var course = await _context.Courses
                 .Include(c => c.Department)
                 .AsNoTracking()
@@ -53,12 +55,13 @@ namespace TallinnaRakenduslikKolledz.Controllers
             {
                 return NotFound();
             }
-            return View(course);
+            return View(nameof(Details), course);
         }
         [HttpPost, ActionName("Delete")]
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> DeleteConfirmed(int id)
         {
+            ViewData["Vaatetüüp"] = "Delete";
             if (_context.Courses == null)
             {
                 return NotFound();
@@ -70,6 +73,13 @@ namespace TallinnaRakenduslikKolledz.Controllers
             }
             await _context.SaveChangesAsync();
             return RedirectToAction(nameof(Index));
+        }
+        [HttpGet]
+        public async Task<IActionResult> Details(int? id)
+        {
+            ViewData["Vaatetüüp"] = "Details";
+            var course = await _context.Courses.FindAsync(id);
+            return View(nameof(Details), course);
         }
         private void PopulateDepartmentDropDownList(object selectedDepartment = null)
         {

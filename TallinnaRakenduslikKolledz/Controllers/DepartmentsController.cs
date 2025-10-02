@@ -51,6 +51,7 @@ namespace TallinnaRakenduslikKolledz.Controllers
             {
                 return NotFound();
             }
+            ViewData["Vaatetüüp"] = "Delete";
             var department = await _context.Departments
                 .Include(d => d.Administrator)
                 .FirstOrDefaultAsync(m => m.DepartmentID == id);
