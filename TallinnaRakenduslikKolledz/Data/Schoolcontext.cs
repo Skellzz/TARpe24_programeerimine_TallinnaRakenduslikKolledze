@@ -21,7 +21,7 @@ public class SchoolContext : DbContext
     public DbSet<CourseAssignment> CourseAssignments { get; set; }
     public DbSet<OfficeAssignment> OfficeAssignments { get; set; }
     public DbSet<Department> Departments { get; set; }
-    public DbSet<TEKNO> Teknos { get; set; }
+    public DbSet<Kaebus> Kaebused { get; set; }
 
 
 
@@ -36,7 +36,7 @@ public class SchoolContext : DbContext
         modelBuilder.Entity<CourseAssignment>().ToTable("CourseAssignment");
         modelBuilder.Entity<OfficeAssignment>().ToTable("OfficeAssignment");
         modelBuilder.Entity<Department>().ToTable("Department");
-        modelBuilder.Entity<TEKNO>().ToTable("TEKNO");
+        modelBuilder.Entity<Kaebus>().ToTable("Kaebus");
 
     }
 

@@ -76,6 +76,18 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSW5zdHJ1Y3RvcnNcSW5kZXgxLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
+[C:/Users/Admin/source/repos/TARpe24_programeerimine_TallinnaRakenduslikKolledze/TallinnaRakenduslikKolledz/Views/Kaebused/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcS2FlYnVzZWRcQ3JlYXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Admin/source/repos/TARpe24_programeerimine_TallinnaRakenduslikKolledze/TallinnaRakenduslikKolledz/Views/Kaebused/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcS2FlYnVzZWRcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Admin/source/repos/TARpe24_programeerimine_TallinnaRakenduslikKolledze/TallinnaRakenduslikKolledz/Views/Kaebused/Indexold.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcS2FlYnVzZWRcSW5kZXhvbGQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/Admin/source/repos/TARpe24_programeerimine_TallinnaRakenduslikKolledze/TallinnaRakenduslikKolledz/Views/Shared/Error.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
@@ -102,14 +114,6 @@ build_metadata.AdditionalFiles.CssScope =
 
 [C:/Users/Admin/source/repos/TARpe24_programeerimine_TallinnaRakenduslikKolledze/TallinnaRakenduslikKolledz/Views/Students/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU3R1ZGVudHNcSW5kZXguY3NodG1s
-build_metadata.AdditionalFiles.CssScope = 
-
-[C:/Users/Admin/source/repos/TARpe24_programeerimine_TallinnaRakenduslikKolledze/TallinnaRakenduslikKolledz/Views/Tekno/Create.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVGVrbm9cQ3JlYXRlLmNzaHRtbA==
-build_metadata.AdditionalFiles.CssScope = 
-
-[C:/Users/Admin/source/repos/TARpe24_programeerimine_TallinnaRakenduslikKolledze/TallinnaRakenduslikKolledz/Views/Tekno/Index.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVGVrbm9cSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/Admin/source/repos/TARpe24_programeerimine_TallinnaRakenduslikKolledze/TallinnaRakenduslikKolledz/Views/_ViewImports.cshtml]

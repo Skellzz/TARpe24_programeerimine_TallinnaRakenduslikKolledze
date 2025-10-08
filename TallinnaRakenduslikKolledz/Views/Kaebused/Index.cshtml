@@ -1,0 +1,77 @@
+﻿@model IEnumerable<TallinnaRakenduslikKolledz.Models.Kaebus>
+
+@{
+	ViewData["Title"] = "Kaebused";
+}
+<h1> Kaebused </h1>
+
+<p>
+	<a asp-action="Create"> Lisa uus kaebus</a>
+</p>
+
+<table class="table">
+	<thead>
+		<tr>
+			<th>
+				@Html.DisplayNameFor(Model => Model.KuritarvitajadID)
+			</th>
+			<th>
+				@Html.DisplayNameFor(Model => Model.Firstname)
+				</th>
+			<th>
+				@Html.DisplayNameFor(Model => Model.Lastname)
+				</th>
+			<th>
+				@Html.DisplayNameFor(Model => Model.OpilaneVOpetaja)
+				</th>
+			<th>
+				@Html.DisplayNameFor(Model => Model.KuritarvitajaDescription)
+				</th>
+			<th>
+				@Html.DisplayNameFor(Model => Model.KuritegevusteArv)
+				</th>
+			<th>
+				@Html.DisplayNameFor(Model => Model.Kaebuse)
+				</th>
+			<th>
+				@Html.DisplayNameFor(Model => Model.KaebuseAdmin)
+				</th>
+		</tr>
+	</thead>
+
+	<tbody>
+		@foreach (var kaebused in Model)
+		{
+			<tr>
+			<td>
+				@Html.DisplayFor(modelItem => kaebused.KuritarvitajadID)
+			</td>
+			<td>
+				@Html.DisplayFor(modelItem => kaebused.Firstname)
+			</td>
+			<td>
+				@Html.DisplayFor(modelItem => kaebused.Lastname)
+			</td>
+			<td>
+				@Html.DisplayFor(modelItem => kaebused.OpilaneVOpetaja)
+			</td>
+			<td>
+				@Html.DisplayFor(modelItem => kaebused.KuritarvitajaDescription)
+			</td>
+			<td>
+				@Html.DisplayFor(modelItem => kaebused.KuritegevusteArv)
+			</td>
+			<td>
+				@Html.DisplayFor(modelItem => kaebused.Kaebuse)
+			</td>
+			<td>
+				@Html.DisplayFor(modelItem => kaebused.KaebuseAdmin)
+			</td>
+			<td>
+				<a asp-action="Edit" asp-route-id="@kaebused.KuritarvitajadID">Kustuta</a>
+				<a asp-action="Details" asp-route-id="@kaebused.KuritarvitajadID">Muuda</a>
+				<a asp-action="View" asp-route-id="@kaebused.KuritarvitajadID">Vaata</a>
+			</td>
+			</tr>
+		}
+</table>

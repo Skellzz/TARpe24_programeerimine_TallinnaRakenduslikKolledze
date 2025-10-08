@@ -3,6 +3,7 @@ using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 #nullable disable
@@ -10,9 +11,11 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace TallinnaRakenduslikKolledz.Migrations
 {
     [DbContext(typeof(SchoolContext))]
-    partial class SchoolContextModelSnapshot : ModelSnapshot
+    [Migration("20251007094646_Migi")]
+    partial class Migi
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        /// <inheritdoc />
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -157,9 +160,6 @@ namespace TallinnaRakenduslikKolledz.Migrations
                     b.Property<DateTime>("HireDate")
                         .HasColumnType("datetime2");
 
-                    b.Property<int?>("KaebusKuritarvitajadID")
-                        .HasColumnType("int");
-
                     b.Property<string>("KriminaalSüüdistusi")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
@@ -176,47 +176,14 @@ namespace TallinnaRakenduslikKolledz.Migrations
                     b.Property<int>("Palk")
                         .HasColumnType("int");
 
+                    b.Property<int?>("TeknoID")
+                        .HasColumnType("int");
+
                     b.HasKey("ID");
 
-                    b.HasIndex("KaebusKuritarvitajadID");
+                    b.HasIndex("TeknoID");
 
                     b.ToTable("Instructor", (string)null);
-                });
-
-            modelBuilder.Entity("TallinnaRakenduslikKolledz.Models.Kaebus", b =>
-                {
-                    b.Property<int>("KuritarvitajadID")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("int");
-
-                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("KuritarvitajadID"));
-
-                    b.Property<string>("Firstname")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<string>("Kaebuse")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<string>("KuritarvitajaDescription")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<int>("KuritegevusteArv")
-                        .HasColumnType("int");
-
-                    b.Property<string>("Lastname")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<string>("OpilaneVOpetaja")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
-
-                    b.HasKey("KuritarvitajadID");
-
-                    b.ToTable("Kaebus", (string)null);
                 });
 
             modelBuilder.Entity("TallinnaRakenduslikKolledz.Models.OfficeAssignment", b =>
@@ -269,6 +236,33 @@ namespace TallinnaRakenduslikKolledz.Migrations
                     b.HasKey("Id");
 
                     b.ToTable("Student", (string)null);
+                });
+
+            modelBuilder.Entity("TallinnaRakenduslikKolledz.Models.TEKNO", b =>
+                {
+                    b.Property<int>("TeknoID")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("TeknoID"));
+
+                    b.Property<int>("TeknoArv")
+                        .HasColumnType("int");
+
+                    b.Property<string>("TeknoDescription")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<int>("TeknoHind")
+                        .HasColumnType("int");
+
+                    b.Property<string>("TeknoNimetus")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.HasKey("TeknoID");
+
+                    b.ToTable("TEKNO", (string)null);
                 });
 
             modelBuilder.Entity("TallinnaRakenduslikKolledz.Models.Course", b =>
@@ -329,9 +323,9 @@ namespace TallinnaRakenduslikKolledz.Migrations
 
             modelBuilder.Entity("TallinnaRakenduslikKolledz.Models.Instructor", b =>
                 {
-                    b.HasOne("TallinnaRakenduslikKolledz.Models.Kaebus", null)
-                        .WithMany("KaebuseAdmin")
-                        .HasForeignKey("KaebusKuritarvitajadID");
+                    b.HasOne("TallinnaRakenduslikKolledz.Models.TEKNO", null)
+                        .WithMany("TeknoAdmin")
+                        .HasForeignKey("TeknoID");
                 });
 
             modelBuilder.Entity("TallinnaRakenduslikKolledz.Models.OfficeAssignment", b =>
@@ -364,14 +358,14 @@ namespace TallinnaRakenduslikKolledz.Migrations
                     b.Navigation("OfficeAssignments");
                 });
 
-            modelBuilder.Entity("TallinnaRakenduslikKolledz.Models.Kaebus", b =>
-                {
-                    b.Navigation("KaebuseAdmin");
-                });
-
             modelBuilder.Entity("TallinnaRakenduslikKolledz.Models.Student", b =>
                 {
                     b.Navigation("Enrollments");
+                });
+
+            modelBuilder.Entity("TallinnaRakenduslikKolledz.Models.TEKNO", b =>
+                {
+                    b.Navigation("TeknoAdmin");
                 });
 #pragma warning restore 612, 618
         }

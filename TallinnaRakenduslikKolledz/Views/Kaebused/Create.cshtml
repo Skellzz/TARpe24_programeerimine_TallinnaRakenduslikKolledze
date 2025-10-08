@@ -1,0 +1,66 @@
+﻿@model TallinnaRakenduslikKolledz.Models.Kaebus
+
+@{
+
+	ViewData["Title"] = "Loo uus Tehnika";
+
+}
+<h1>Loo uus Tehnika</h1>
+<hr />
+<div class=="row">
+	<form asp-action="Create">
+
+		<div asp-validation-summary="ModelOnly" class="text-danger"></div>
+
+		<div class="form-group">
+			<label asp-for="KuritarvitajadID" class="control-label"></label>
+			<input asp-for="KuritarvitajadID" class="form-control" />
+			<span asp-validation-for="KuritarvitajadID" class="text-danger"></span>
+		</div>
+		<div class="form-group">
+			<label asp-for="Firstname" class="control-label"></label>
+			<input asp-for="Firstname" class="form-control" />
+			<span asp-validation-for="Firstname" class="text-danger"></span>
+		</div>
+		<div class="form-group">
+			<label asp-for="Lastname" class="control-label"></label>
+			<input asp-for="Lastname" class="form-control" />
+			<span asp-validation-for="Lastname" class="text-danger"></span>
+		</div>
+		<div class="form-group">
+			<label asp-for="OpilaneVOpetaja" class="control-label"></label>
+			<input asp-for="OpilaneVOpetaja" class="form-control" />
+			<span asp-validation-for="OpilaneVOpetaja" class="text-danger"></span>
+		</div>
+		<div class="form-group">
+			<label asp-for="KuritarvitajaDescription" class="control-label"></label>
+			<input asp-for="KuritarvitajaDescription" class="form-control" />
+			<span asp-validation-for="KuritarvitajaDescription" class="text-danger"></span>
+		</div>
+		<div class="form-group">
+			<label asp-for="KuritegevusteArv" class="control-label"></label>
+			<input asp-for="KuritegevusteArv" class="form-control" />
+			<span asp-validation-for="KuritegevusteArv" class="text-danger"></span>
+		</div>
+		<div class="form-group">
+			<label asp-for="Kaebuse" class="control-label"></label>
+			<input asp-for="Kaebuse" class="form-control" />
+			<span asp-validation-for="Kaebuse" class="text-danger"></span>
+		</div>
+		
+		<div class="form-group">
+			<label asp-for="KaebuseAdmin" class="control-label"></label>
+			<input asp-for="KaebuseAdmin" class="form-control" />
+			<span asp-validation-for="KaebuseAdmin" class="text-danger"></span>
+		</div>
+		<divc class="form-group">
+			<input type="submit" value="Sisesta" class="btn btn-primary" />
+		</divc>
+	</form>
+</div>
+
+<div>
+			<a asp-action="Index">Mine tagasi loendisse</a>
+</div>
+
+

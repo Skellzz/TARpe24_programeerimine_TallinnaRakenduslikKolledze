@@ -5,17 +5,17 @@ using Microsoft.AspNetCore.Mvc.Rendering;
 namespace TallinnaRakenduslikKolledz.Controllers
 
 {
-    public class TEKNOController : Controller
+    public class KaebusedController : Controller
     {
         private readonly SchoolContext _context;
-        public TEKNOController(SchoolContext context)
+        public KaebusedController(SchoolContext context)
         {
             _context = context;
         }
 
         public async Task<IActionResult> Index()
         {
-            return View(await _context.Students.ToListAsync());
+            return View(await _context.Kaebused.ToListAsync());
         }
 
         public IActionResult Create()
@@ -24,16 +24,16 @@ namespace TallinnaRakenduslikKolledz.Controllers
         }
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Create([Bind("TeknoNimetus, TeknoDescription, TeknoArv, TeknoID, TeknoHind, TeknoAdmin")] TEKNO Teknos)
+        public async Task<IActionResult> Create([Bind("KuritarvitajadID, Firstname, Lastname, OpilaneVOpetaja, KuritarvitajaDescription, KuritegevusteArv, Kaebuse, KaebuseAdmin")] Kaebus kaebused)
         {
             if (!ModelState.IsValid)
             {
-                _context.Teknos.Add(Teknos);
+                _context.Kaebused.Add(kaebused);
                 await _context.SaveChangesAsync();
                 return RedirectToAction("Index");
                 // return RedirectToAction(nameof(Index));
             }
-            return View(Teknos);
+            return View(kaebused);
 
         }
 
