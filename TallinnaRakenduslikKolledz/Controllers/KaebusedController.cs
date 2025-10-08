@@ -52,6 +52,25 @@ namespace TallinnaRakenduslikKolledz.Controllers
             return View(kaebus);
         }
 
+        [HttpGet]
+        public async Task<IActionResult> Edit(int id)
+        {
+            var kaebus = await _context.Kaebused.FindAsync(id);
+            return View(kaebus);
+        }
+        [HttpPost, ActionName("EditConfirmed")]
+        public async Task<IActionResult> Edit([Bind("KuritarvitajadID, Firstname, Lastname, OpilaneVOpetaja, KuritarvitajaDescription, KuritegevusteArv, Kaebuse, KaebuseAdmin")] Kaebus kaebused)
+        {
+            if (ModelState.IsValid)
+            {
+                _context.Kaebused.Update(kaebused);
+                await _context.SaveChangesAsync();
+                return RedirectToAction("Index");
+
+            }
+            return View(kaebused);
+        }
+
 
 
     }

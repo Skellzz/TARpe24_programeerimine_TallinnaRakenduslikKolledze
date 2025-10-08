@@ -7,32 +7,16 @@
       "RelativeMoniker": "D:0:0:{ED550561-E8B9-45E0-BF36-6A0CB96B7904}|TallinnaRakenduslikKolledz\\TallinnaRakenduslikKolledz.csproj|solutionrelative:tallinnarakenduslikkolledz\\views\\kaebused\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{ED550561-E8B9-45E0-BF36-6A0CB96B7904}|TallinnaRakenduslikKolledz\\TallinnaRakenduslikKolledz.csproj|c:\\users\\admin\\source\\repos\\tarpe24_programeerimine_tallinnarakenduslikkolledze\\tallinnarakenduslikkolledz\\views\\kaebused\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{ED550561-E8B9-45E0-BF36-6A0CB96B7904}|TallinnaRakenduslikKolledz\\TallinnaRakenduslikKolledz.csproj|solutionrelative:tallinnarakenduslikkolledz\\views\\kaebused\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{ED550561-E8B9-45E0-BF36-6A0CB96B7904}|TallinnaRakenduslikKolledz\\TallinnaRakenduslikKolledz.csproj|c:\\users\\admin\\source\\repos\\tarpe24_programeerimine_tallinnarakenduslikkolledze\\tallinnarakenduslikkolledz\\views\\kaebused\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{ED550561-E8B9-45E0-BF36-6A0CB96B7904}|TallinnaRakenduslikKolledz\\TallinnaRakenduslikKolledz.csproj|solutionrelative:tallinnarakenduslikkolledz\\views\\kaebused\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{ED550561-E8B9-45E0-BF36-6A0CB96B7904}|TallinnaRakenduslikKolledz\\TallinnaRakenduslikKolledz.csproj|c:\\users\\admin\\source\\repos\\tarpe24_programeerimine_tallinnarakenduslikkolledze\\tallinnarakenduslikkolledz\\controllers\\kaebusedcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{ED550561-E8B9-45E0-BF36-6A0CB96B7904}|TallinnaRakenduslikKolledz\\TallinnaRakenduslikKolledz.csproj|solutionrelative:tallinnarakenduslikkolledz\\controllers\\kaebusedcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{ED550561-E8B9-45E0-BF36-6A0CB96B7904}|TallinnaRakenduslikKolledz\\TallinnaRakenduslikKolledz.csproj|c:\\users\\admin\\source\\repos\\tarpe24_programeerimine_tallinnarakenduslikkolledze\\tallinnarakenduslikkolledz\\controllers\\departmentscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{ED550561-E8B9-45E0-BF36-6A0CB96B7904}|TallinnaRakenduslikKolledz\\TallinnaRakenduslikKolledz.csproj|solutionrelative:tallinnarakenduslikkolledz\\controllers\\departmentscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{ED550561-E8B9-45E0-BF36-6A0CB96B7904}|TallinnaRakenduslikKolledz\\TallinnaRakenduslikKolledz.csproj|c:\\users\\admin\\source\\repos\\tarpe24_programeerimine_tallinnarakenduslikkolledze\\tallinnarakenduslikkolledz\\controllers\\instructorscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{ED550561-E8B9-45E0-BF36-6A0CB96B7904}|TallinnaRakenduslikKolledz\\TallinnaRakenduslikKolledz.csproj|solutionrelative:tallinnarakenduslikkolledz\\controllers\\instructorscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{ED550561-E8B9-45E0-BF36-6A0CB96B7904}|TallinnaRakenduslikKolledz\\TallinnaRakenduslikKolledz.csproj|c:\\users\\admin\\source\\repos\\tarpe24_programeerimine_tallinnarakenduslikkolledze\\tallinnarakenduslikkolledz\\views\\students\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{ED550561-E8B9-45E0-BF36-6A0CB96B7904}|TallinnaRakenduslikKolledz\\TallinnaRakenduslikKolledz.csproj|solutionrelative:tallinnarakenduslikkolledz\\views\\students\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{ED550561-E8B9-45E0-BF36-6A0CB96B7904}|TallinnaRakenduslikKolledz\\TallinnaRakenduslikKolledz.csproj|c:\\users\\admin\\source\\repos\\tarpe24_programeerimine_tallinnarakenduslikkolledze\\tallinnarakenduslikkolledz\\models\\kaebused.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{ED550561-E8B9-45E0-BF36-6A0CB96B7904}|TallinnaRakenduslikKolledz\\TallinnaRakenduslikKolledz.csproj|solutionrelative:tallinnarakenduslikkolledz\\models\\kaebused.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{ED550561-E8B9-45E0-BF36-6A0CB96B7904}|TallinnaRakenduslikKolledz\\TallinnaRakenduslikKolledz.csproj|c:\\users\\admin\\source\\repos\\tarpe24_programeerimine_tallinnarakenduslikkolledze\\tallinnarakenduslikkolledz\\views\\kaebused\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{ED550561-E8B9-45E0-BF36-6A0CB96B7904}|TallinnaRakenduslikKolledz\\TallinnaRakenduslikKolledz.csproj|solutionrelative:tallinnarakenduslikkolledz\\views\\kaebused\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{ED550561-E8B9-45E0-BF36-6A0CB96B7904}|TallinnaRakenduslikKolledz\\TallinnaRakenduslikKolledz.csproj|c:\\users\\admin\\source\\repos\\tarpe24_programeerimine_tallinnarakenduslikkolledze\\tallinnarakenduslikkolledz\\controllers\\studentscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{ED550561-E8B9-45E0-BF36-6A0CB96B7904}|TallinnaRakenduslikKolledz\\TallinnaRakenduslikKolledz.csproj|solutionrelative:tallinnarakenduslikkolledz\\controllers\\studentscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -96,22 +80,8 @@
         },
         {
           "DockedWidth": 375,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 8,
           "Children": [
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "Index.cshtml",
-              "DocumentMoniker": "C:\\Users\\Admin\\source\\repos\\TARpe24_programeerimine_TallinnaRakenduslikKolledze\\TallinnaRakenduslikKolledz\\Views\\Kaebused\\Index.cshtml",
-              "RelativeDocumentMoniker": "TallinnaRakenduslikKolledz\\Views\\Kaebused\\Index.cshtml",
-              "ToolTip": "C:\\Users\\Admin\\source\\repos\\TARpe24_programeerimine_TallinnaRakenduslikKolledze\\TallinnaRakenduslikKolledz\\Views\\Kaebused\\Index.cshtml",
-              "RelativeToolTip": "TallinnaRakenduslikKolledz\\Views\\Kaebused\\Index.cshtml",
-              "ViewState": "AgIAAC0AAAAAAAAAAAAAADsAAAAIAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-10-08T07:24:10.816Z",
-              "IsPinned": true,
-              "EditorCaption": ""
-            },
             {
               "$type": "Document",
               "DocumentIndex": 2,
@@ -120,9 +90,23 @@
               "RelativeDocumentMoniker": "TallinnaRakenduslikKolledz\\Controllers\\KaebusedController.cs",
               "ToolTip": "C:\\Users\\Admin\\source\\repos\\TARpe24_programeerimine_TallinnaRakenduslikKolledze\\TallinnaRakenduslikKolledz\\Controllers\\KaebusedController.cs",
               "RelativeToolTip": "TallinnaRakenduslikKolledz\\Controllers\\KaebusedController.cs",
-              "ViewState": "AgIAABoAAAAAAAAAAAAgwCoAAAAbAAAAAAAAAA==",
+              "ViewState": "AgIAADEAAAAAAAAAAAAkwD0AAAAtAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-10-08T07:54:45.339Z",
+              "IsPinned": true,
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Edit.cshtml",
+              "DocumentMoniker": "C:\\Users\\Admin\\source\\repos\\TARpe24_programeerimine_TallinnaRakenduslikKolledze\\TallinnaRakenduslikKolledz\\Views\\Kaebused\\Edit.cshtml",
+              "RelativeDocumentMoniker": "TallinnaRakenduslikKolledz\\Views\\Kaebused\\Edit.cshtml",
+              "ToolTip": "C:\\Users\\Admin\\source\\repos\\TARpe24_programeerimine_TallinnaRakenduslikKolledze\\TallinnaRakenduslikKolledz\\Views\\Kaebused\\Edit.cshtml",
+              "RelativeToolTip": "TallinnaRakenduslikKolledz\\Views\\Kaebused\\Edit.cshtml",
+              "ViewState": "AgIAAC0AAAAAAAAAAAAAACEAAAA8AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-10-08T08:12:16.992Z",
               "IsPinned": true,
               "EditorCaption": ""
             },
@@ -152,80 +136,29 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "Details.cshtml",
-              "DocumentMoniker": "C:\\Users\\Admin\\source\\repos\\TARpe24_programeerimine_TallinnaRakenduslikKolledze\\TallinnaRakenduslikKolledz\\Views\\Kaebused\\Details.cshtml",
-              "RelativeDocumentMoniker": "TallinnaRakenduslikKolledz\\Views\\Kaebused\\Details.cshtml",
-              "ToolTip": "C:\\Users\\Admin\\source\\repos\\TARpe24_programeerimine_TallinnaRakenduslikKolledze\\TallinnaRakenduslikKolledz\\Views\\Kaebused\\Details.cshtml",
-              "RelativeToolTip": "TallinnaRakenduslikKolledz\\Views\\Kaebused\\Details.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAADEAAAAAAAAAAAAAAA==",
+              "DocumentIndex": 0,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\Admin\\source\\repos\\TARpe24_programeerimine_TallinnaRakenduslikKolledze\\TallinnaRakenduslikKolledz\\Views\\Kaebused\\Index.cshtml",
+              "RelativeDocumentMoniker": "TallinnaRakenduslikKolledz\\Views\\Kaebused\\Index.cshtml",
+              "ToolTip": "C:\\Users\\Admin\\source\\repos\\TARpe24_programeerimine_TallinnaRakenduslikKolledze\\TallinnaRakenduslikKolledz\\Views\\Kaebused\\Index.cshtml",
+              "RelativeToolTip": "TallinnaRakenduslikKolledz\\Views\\Kaebused\\Index.cshtml",
+              "ViewState": "AgIAADwAAAAAAAAAAAAAAEYAAAAaAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-10-08T08:05:40.383Z",
+              "WhenOpened": "2025-10-08T07:24:10.816Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 3,
-              "Title": "DepartmentsController.cs",
-              "DocumentMoniker": "C:\\Users\\Admin\\source\\repos\\TARpe24_programeerimine_TallinnaRakenduslikKolledze\\TallinnaRakenduslikKolledz\\Controllers\\DepartmentsController.cs",
-              "RelativeDocumentMoniker": "TallinnaRakenduslikKolledz\\Controllers\\DepartmentsController.cs",
-              "ToolTip": "C:\\Users\\Admin\\source\\repos\\TARpe24_programeerimine_TallinnaRakenduslikKolledze\\TallinnaRakenduslikKolledz\\Controllers\\DepartmentsController.cs",
-              "RelativeToolTip": "TallinnaRakenduslikKolledz\\Controllers\\DepartmentsController.cs",
-              "ViewState": "AgIAABUAAAAAAAAAAAAYwAkAAAAqAAAAAAAAAA==",
+              "Title": "StudentsController.cs",
+              "DocumentMoniker": "C:\\Users\\Admin\\source\\repos\\TARpe24_programeerimine_TallinnaRakenduslikKolledze\\TallinnaRakenduslikKolledz\\Controllers\\StudentsController.cs",
+              "RelativeDocumentMoniker": "TallinnaRakenduslikKolledz\\Controllers\\StudentsController.cs",
+              "ToolTip": "C:\\Users\\Admin\\source\\repos\\TARpe24_programeerimine_TallinnaRakenduslikKolledze\\TallinnaRakenduslikKolledz\\Controllers\\StudentsController.cs",
+              "RelativeToolTip": "TallinnaRakenduslikKolledz\\Controllers\\StudentsController.cs",
+              "ViewState": "AgIAAEkAAAAAAAAAAAAwwE0AAAAHAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-08T08:03:57.423Z",
+              "WhenOpened": "2025-10-08T08:16:41.845Z",
               "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "InstructorsController.cs",
-              "DocumentMoniker": "C:\\Users\\Admin\\source\\repos\\TARpe24_programeerimine_TallinnaRakenduslikKolledze\\TallinnaRakenduslikKolledz\\Controllers\\InstructorsController.cs",
-              "RelativeDocumentMoniker": "TallinnaRakenduslikKolledz\\Controllers\\InstructorsController.cs",
-              "ToolTip": "C:\\Users\\Admin\\source\\repos\\TARpe24_programeerimine_TallinnaRakenduslikKolledze\\TallinnaRakenduslikKolledz\\Controllers\\InstructorsController.cs",
-              "RelativeToolTip": "TallinnaRakenduslikKolledz\\Controllers\\InstructorsController.cs",
-              "ViewState": "AgIAAF4AAAAAAAAAAAAwwAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-08T08:03:10.23Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "Index.cshtml",
-              "DocumentMoniker": "C:\\Users\\Admin\\source\\repos\\TARpe24_programeerimine_TallinnaRakenduslikKolledze\\TallinnaRakenduslikKolledz\\Views\\Students\\Index.cshtml",
-              "RelativeDocumentMoniker": "TallinnaRakenduslikKolledz\\Views\\Students\\Index.cshtml",
-              "ToolTip": "C:\\Users\\Admin\\source\\repos\\TARpe24_programeerimine_TallinnaRakenduslikKolledze\\TallinnaRakenduslikKolledz\\Views\\Students\\Index.cshtml",
-              "RelativeToolTip": "TallinnaRakenduslikKolledz\\Views\\Students\\Index.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-10-08T07:52:27.708Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "Kaebused.cs",
-              "DocumentMoniker": "C:\\Users\\Admin\\source\\repos\\TARpe24_programeerimine_TallinnaRakenduslikKolledze\\TallinnaRakenduslikKolledz\\Models\\Kaebused.cs",
-              "RelativeDocumentMoniker": "TallinnaRakenduslikKolledz\\Models\\Kaebused.cs",
-              "ToolTip": "C:\\Users\\Admin\\source\\repos\\TARpe24_programeerimine_TallinnaRakenduslikKolledze\\TallinnaRakenduslikKolledz\\Models\\Kaebused.cs",
-              "RelativeToolTip": "TallinnaRakenduslikKolledz\\Models\\Kaebused.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAXAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-08T07:34:38.296Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "Create.cshtml",
-              "DocumentMoniker": "C:\\Users\\Admin\\source\\repos\\TARpe24_programeerimine_TallinnaRakenduslikKolledze\\TallinnaRakenduslikKolledz\\Views\\Kaebused\\Create.cshtml",
-              "RelativeDocumentMoniker": "TallinnaRakenduslikKolledz\\Views\\Kaebused\\Create.cshtml",
-              "ToolTip": "C:\\Users\\Admin\\source\\repos\\TARpe24_programeerimine_TallinnaRakenduslikKolledze\\TallinnaRakenduslikKolledz\\Views\\Kaebused\\Create.cshtml",
-              "RelativeToolTip": "TallinnaRakenduslikKolledz\\Views\\Kaebused\\Create.cshtml",
-              "ViewState": "AgIAABIAAAAAAAAAAAAAAAoAAAAbAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-10-08T07:33:42.036Z"
             }
           ]
         }
