@@ -37,7 +37,20 @@ namespace TallinnaRakenduslikKolledz.Controllers
 
         }
 
-
+        [HttpGet]
+        public async Task<IActionResult> Details(int? id)
+        {
+            if (id == null)
+            {
+                return NotFound();
+            }
+            var kaebus = await _context.Kaebused.FindAsync(id);
+            if (kaebus == null)
+            {
+                return NotFound();
+            }
+            return View(kaebus);
+        }
 
 
 
