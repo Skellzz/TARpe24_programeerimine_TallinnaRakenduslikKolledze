@@ -1,0 +1,54 @@
+﻿@model TallinnaRakenduslikKolledz.Models.Kaebus
+
+@{
+	ViewData["Title"] = "Kustuda Kaebus";
+}
+<h1>
+	Kustuta Kaebus
+</h1>
+<h3>
+	Kas oled Kindel, et tahad Kaebust @Model.Firstname @Model.Lastname kohta eemaldada?
+</h3>
+<div>
+	<h4>
+		Õpilane @Model.Firstname @Model.Lastname
+	</h4>
+	<dl class="row">
+		<dt class="col-sm-2">@Html.DisplayNameFor(Model => Model.Lastname)</dt>
+		<dd class="col-sm-10">@Html.DisplayFor(Model => Model.Lastname)</dd>
+	</dl>
+	<dl class="row">
+		<dt class="col-sm-2">@Html.DisplayNameFor(Model => Model.Firstname)</dt>
+		<dd class="col-sm-10">@Html.DisplayFor(Model => Model.Firstname)</dd>
+	</dl>
+	<dl class="row">
+		<dt class="col-sm-2">@Html.DisplayNameFor(Model => Model.KuritarvitajadID)</dt>
+		<dd class="col-sm-10">@Html.DisplayFor(Model => Model.KuritarvitajadID)</dd>
+	</dl>
+	<dl class="row">
+		<dt class="col-sm-2">@Html.DisplayNameFor(Model => Model.OpilaneVOpetaja)</dt>
+		<dd class="col-sm-10">@Html.DisplayFor(Model => Model.OpilaneVOpetaja)</dd>
+	</dl>
+	<dl class="row">
+		<dt class="col-sm-2">@Html.DisplayNameFor(Model => Model.KuritarvitajaDescription)</dt>
+		<dd class="col-sm-10">@Html.DisplayFor(Model => Model.KuritarvitajaDescription)</dd>
+	</dl>
+	<dl class="row">
+		<dt class="col-sm-2">@Html.DisplayNameFor(Model => Model.KuritegevusteArv)</dt>
+		<dd class="col-sm-10">@Html.DisplayFor(Model => Model.KuritegevusteArv)</dd>
+	</dl>
+	<dl class="row">
+		<dt class="col-sm-2">@Html.DisplayNameFor(Model => Model.Kaebuse)</dt>
+		<dd class="col-sm-10">@Html.DisplayFor(Model => Model.Kaebuse)</dd>
+	</dl>
+	<dl class="row">
+		<dt class="col-sm-2">@Html.DisplayNameFor(Model => Model.KaebuseAdmin)</dt>
+		<dd class="col-sm-10">@Html.DisplayFor(Model => Model.KaebuseAdmin)</dd>
+	</dl>
+
+</div>
+
+<form asp-action="Delete">
+	<input type="hidden" asp-for="KuritarvitajadID" />
+	<input type="submit" value="Kustuta Õpilane" class="btn btn-danger" /> | <a asp-action="Index">Tühista</a>
+</form>
