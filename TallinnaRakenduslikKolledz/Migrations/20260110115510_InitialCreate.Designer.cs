@@ -11,8 +11,8 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace TallinnaRakenduslikKolledz.Migrations
 {
     [DbContext(typeof(SchoolContext))]
-    [Migration("20251008071656_ISJA")]
-    partial class ISJA
+    [Migration("20260110115510_InitialCreate")]
+    partial class InitialCreate
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -132,9 +132,6 @@ namespace TallinnaRakenduslikKolledz.Migrations
                     b.Property<int>("StudentID")
                         .HasColumnType("int");
 
-                    b.Property<int>("stdentID")
-                        .HasColumnType("int");
-
                     b.HasKey("EnrollmentID");
 
                     b.HasIndex("CourseID");
@@ -160,9 +157,6 @@ namespace TallinnaRakenduslikKolledz.Migrations
                     b.Property<DateTime>("HireDate")
                         .HasColumnType("datetime2");
 
-                    b.Property<int?>("KaebusKuritarvitajadID")
-                        .HasColumnType("int");
-
                     b.Property<string>("KriminaalSüüdistusi")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
@@ -181,43 +175,39 @@ namespace TallinnaRakenduslikKolledz.Migrations
 
                     b.HasKey("ID");
 
-                    b.HasIndex("KaebusKuritarvitajadID");
-
                     b.ToTable("Instructor", (string)null);
                 });
 
             modelBuilder.Entity("TallinnaRakenduslikKolledz.Models.Kaebus", b =>
                 {
-                    b.Property<int>("KuritarvitajadID")
+                    b.Property<int>("StutentId")
                         .ValueGeneratedOnAdd()
                         .HasColumnType("int");
 
-                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("KuritarvitajadID"));
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("StutentId"));
 
                     b.Property<string>("Firstname")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<string>("Kaebuse")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<string>("KuritarvitajaDescription")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<int>("KuritegevusteArv")
-                        .HasColumnType("int");
-
                     b.Property<string>("Lastname")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<string>("OpilaneVOpetaja")
+                    b.Property<string>("NoteForParents")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("ReasonForSuspension")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
-                    b.HasKey("KuritarvitajadID");
+                    b.Property<DateTime>("SuspensionEndDate")
+                        .HasColumnType("datetime2");
+
+                    b.Property<DateTime>("SuspensionStartDate")
+                        .HasColumnType("datetime2");
+
+                    b.HasKey("StutentId");
 
                     b.ToTable("Kaebus", (string)null);
                 });
@@ -330,13 +320,6 @@ namespace TallinnaRakenduslikKolledz.Migrations
                     b.Navigation("Student");
                 });
 
-            modelBuilder.Entity("TallinnaRakenduslikKolledz.Models.Instructor", b =>
-                {
-                    b.HasOne("TallinnaRakenduslikKolledz.Models.Kaebus", null)
-                        .WithMany("KaebuseAdmin")
-                        .HasForeignKey("KaebusKuritarvitajadID");
-                });
-
             modelBuilder.Entity("TallinnaRakenduslikKolledz.Models.OfficeAssignment", b =>
                 {
                     b.HasOne("TallinnaRakenduslikKolledz.Models.Instructor", "Instructors")
@@ -365,11 +348,6 @@ namespace TallinnaRakenduslikKolledz.Migrations
                     b.Navigation("CourseAssignments");
 
                     b.Navigation("OfficeAssignments");
-                });
-
-            modelBuilder.Entity("TallinnaRakenduslikKolledz.Models.Kaebus", b =>
-                {
-                    b.Navigation("KaebuseAdmin");
                 });
 
             modelBuilder.Entity("TallinnaRakenduslikKolledz.Models.Student", b =>

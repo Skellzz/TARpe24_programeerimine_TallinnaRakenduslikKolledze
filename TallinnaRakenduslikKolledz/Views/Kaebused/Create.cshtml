@@ -2,7 +2,7 @@
 
 @{
 
-	ViewData["Title"] = "Loo uus Kaebus";
+	ViewData["Title"] = "New Suspension";
 
 }
 <h1>Loo uus Kaebus</h1>
@@ -12,11 +12,7 @@
 
 		<div asp-validation-summary="ModelOnly" class="text-danger"></div>
 
-		<div class="form-group">
-			<label asp-for="KuritarvitajadID" class="control-label"></label>
-			<input asp-for="KuritarvitajadID" class="form-control" />
-			<span asp-validation-for="KuritarvitajadID" class="text-danger"></span>
-		</div>
+		
 		<div class="form-group">
 			<label asp-for="Firstname" class="control-label"></label>
 			<input asp-for="Firstname" class="form-control" />
@@ -28,31 +24,26 @@
 			<span asp-validation-for="Lastname" class="text-danger"></span>
 		</div>
 		<div class="form-group">
-			<label asp-for="OpilaneVOpetaja" class="control-label"></label>
-			<input asp-for="OpilaneVOpetaja" class="form-control" />
-			<span asp-validation-for="OpilaneVOpetaja" class="text-danger"></span>
+			<label asp-for="ReasonForSuspension" class="control-label"></label>
+			<input asp-for="ReasonForSuspension" class="form-control" />
+			<span asp-validation-for="ReasonForSuspension" class="text-danger"></span>
 		</div>
 		<div class="form-group">
-			<label asp-for="KuritarvitajaDescription" class="control-label"></label>
-			<input asp-for="KuritarvitajaDescription" class="form-control" />
-			<span asp-validation-for="KuritarvitajaDescription" class="text-danger"></span>
+			<label asp-for="SuspensionStartDate" class="control-label"></label>
+			<input asp-for="SuspensionStartDate" class="form-control" />
+			<span asp-validation-for="SuspensionStartDate" class="text-danger"></span>
 		</div>
 		<div class="form-group">
-			<label asp-for="KuritegevusteArv" class="control-label"></label>
-			<input asp-for="KuritegevusteArv" class="form-control" />
-			<span asp-validation-for="KuritegevusteArv" class="text-danger"></span>
+			<label asp-for="SuspensionEndDate" class="control-label"></label>
+			<input asp-for="SuspensionEndDate" class="form-control" />
+			<span asp-validation-for="SuspensionEndDate" class="text-danger"></span>
 		</div>
 		<div class="form-group">
-			<label asp-for="Kaebuse" class="control-label"></label>
-			<input asp-for="Kaebuse" class="form-control" />
-			<span asp-validation-for="Kaebuse" class="text-danger"></span>
+			<label asp-for="NoteForParents" class="control-label"></label>
+			<input asp-for="NoteForParents" class="form-control" />
+			<span asp-validation-for="NoteForParents" class="text-danger"></span>
 		</div>
 		
-		<div class="form-group">
-			<label asp-for="KaebuseAdmin" class="control-label"></label>
-			<input asp-for="KaebuseAdmin" class="form-control" />
-			<span asp-validation-for="KaebuseAdmin" class="text-danger"></span>
-		</div>
 		<divc class="form-group">
 			<input type="submit" value="Sisesta" class="btn btn-primary" />
 		</divc>

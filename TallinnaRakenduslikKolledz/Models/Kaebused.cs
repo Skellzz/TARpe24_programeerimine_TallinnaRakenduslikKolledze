@@ -6,15 +6,12 @@ namespace TallinnaRakenduslikKolledz.Models
     public class Kaebus
     {
         [Key]
-        public int KuritarvitajadID { get; set; }
+        public int StutentId { get; set; }  
         public string Firstname { get; set; }
         public string Lastname { get; set; }
-        public string OpilaneVOpetaja { get; set; }
-        public string KuritarvitajaDescription { get; set; }
-        public int KuritegevusteArv { get; set; }
-        public string Kaebuse { get; set; }
-
-        public ICollection<Instructor>? KaebuseAdmin { get; set; }
-
-        }
+        public string ReasonForSuspension { get; set; }
+        public DateTime SuspensionStartDate { get; set; }
+        public DateTime SuspensionEndDate { get; set; }
+        public string? NoteForParents { get; set; }
+    }
 }

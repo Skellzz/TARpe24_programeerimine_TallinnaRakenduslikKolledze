@@ -6,7 +6,7 @@ using Microsoft.EntityFrameworkCore.Migrations;
 namespace TallinnaRakenduslikKolledz.Migrations
 {
     /// <inheritdoc />
-    public partial class try3 : Migration
+    public partial class InitialCreate : Migration
     {
         /// <inheritdoc />
         protected override void Up(MigrationBuilder migrationBuilder)
@@ -27,6 +27,24 @@ namespace TallinnaRakenduslikKolledz.Migrations
                 constraints: table =>
                 {
                     table.PrimaryKey("PK_Instructor", x => x.ID);
+                });
+
+            migrationBuilder.CreateTable(
+                name: "Kaebus",
+                columns: table => new
+                {
+                    StutentId = table.Column<int>(type: "int", nullable: false)
+                        .Annotation("SqlServer:Identity", "1, 1"),
+                    Firstname = table.Column<string>(type: "nvarchar(max)", nullable: false),
+                    Lastname = table.Column<string>(type: "nvarchar(max)", nullable: false),
+                    ReasonForSuspension = table.Column<string>(type: "nvarchar(max)", nullable: false),
+                    SuspensionStartDate = table.Column<DateTime>(type: "datetime2", nullable: false),
+                    SuspensionEndDate = table.Column<DateTime>(type: "datetime2", nullable: false),
+                    NoteForParents = table.Column<string>(type: "nvarchar(max)", nullable: true)
+                },
+                constraints: table =>
+                {
+                    table.PrimaryKey("PK_Kaebus", x => x.StutentId);
                 });
 
             migrationBuilder.CreateTable(
@@ -153,7 +171,6 @@ namespace TallinnaRakenduslikKolledz.Migrations
                         .Annotation("SqlServer:Identity", "1, 1"),
                     StudentID = table.Column<int>(type: "int", nullable: false),
                     CourseID = table.Column<int>(type: "int", nullable: false),
-                    stdentID = table.Column<int>(type: "int", nullable: false),
                     CurrentGrade = table.Column<int>(type: "int", nullable: false)
                 },
                 constraints: table =>
@@ -212,6 +229,9 @@ namespace TallinnaRakenduslikKolledz.Migrations
 
             migrationBuilder.DropTable(
                 name: "Enrollment");
+
+            migrationBuilder.DropTable(
+                name: "Kaebus");
 
             migrationBuilder.DropTable(
                 name: "OfficeAssignment");

@@ -24,9 +24,9 @@ namespace TallinnaRakenduslikKolledz.Controllers
         }
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Create([Bind("KuritarvitajadID, Firstname, Lastname, OpilaneVOpetaja, KuritarvitajaDescription, KuritegevusteArv, Kaebuse, KaebuseAdmin")] Kaebus kaebused)
+        public async Task<IActionResult> Create([Bind("StutentId, Firstname, Lastname, ReasonForSuspension, SuspensionStartDate, SuspensionEndDate, NoteForParents")] Kaebus kaebused)
         {
-            if (!ModelState.IsValid)
+            if (ModelState.IsValid)
             {
                 _context.Kaebused.Add(kaebused);
                 await _context.SaveChangesAsync();
@@ -36,40 +36,6 @@ namespace TallinnaRakenduslikKolledz.Controllers
             return View(kaebused);
 
         }
-
-        [HttpGet]
-        public async Task<IActionResult> Details(int? id)
-        {
-            if (id == null)
-            {
-                return NotFound();
-            }
-            var kaebus = await _context.Kaebused.FindAsync(id);
-            if (kaebus == null)
-            {
-                return NotFound();
-            }
-            return View(kaebus);
-        }
-
-        [HttpGet]
-        public async Task<IActionResult> Edit(int id)
-        {
-            var kaebus = await _context.Kaebused.FindAsync(id);
-            return View(kaebus);
-        }
-        [HttpPost, ActionName("EditConfirmed")]
-        public async Task<IActionResult> Edit([Bind("KuritarvitajadID, Firstname, Lastname, OpilaneVOpetaja, KuritarvitajaDescription, KuritegevusteArv, Kaebuse, KaebuseAdmin")] Kaebus kaebused)
-        {
-            if (ModelState.IsValid)
-            {
-                _context.Kaebused.Update(kaebused);
-                await _context.SaveChangesAsync();
-                return RedirectToAction("Index");
-
-            }
-            return View(kaebused);
-        }
         [HttpGet]
         public async Task<IActionResult> Delete(int? id)
         {
@@ -77,7 +43,7 @@ namespace TallinnaRakenduslikKolledz.Controllers
             {
                 return NotFound();
             }
-            var kaebus = await _context.Kaebused.FirstOrDefaultAsync(m => m.KuritarvitajadID == id);
+            var kaebus = await _context.Kaebused.FirstOrDefaultAsync(m => m.StutentId == id);
             if (kaebus == null)
             {
                 return NotFound();
@@ -94,6 +60,33 @@ namespace TallinnaRakenduslikKolledz.Controllers
             await _context.SaveChangesAsync();
             return RedirectToAction("Index");
         }
+
+        [HttpGet]
+        public async Task<IActionResult> Details(int? id)
+        {
+           var kaebus = await _context.Kaebused.FindAsync(id);
+            return View(kaebus);
+        }
+
+        [HttpGet]
+        public async Task<IActionResult> Edit(int id)
+        {
+            var kaebus = await _context.Kaebused.FindAsync(id);
+            return View(kaebus);
+        }
+        [HttpPost, ActionName("EditConfirmed")]
+        public async Task<IActionResult> Edit([Bind("StutentId, Firstname, Lastname, ReasonForSuspension, SuspensionStartDate, SuspensionEndDate, NoteForParents")] Kaebus kaebused)
+        {
+            if (ModelState.IsValid)
+            {
+                _context.Kaebused.Update(kaebused);
+                await _context.SaveChangesAsync();
+                return RedirectToAction("Index");
+
+            }
+            return View(kaebused);
+        }
+        
 
 
     }

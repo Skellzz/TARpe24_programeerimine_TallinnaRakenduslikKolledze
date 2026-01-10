@@ -1,19 +1,19 @@
 ﻿@model IEnumerable<TallinnaRakenduslikKolledz.Models.Kaebus>
 
 @{
-	ViewData["Title"] = "Kaebused";
+	ViewData["Title"] = "Suspensions";
 }
-<h1> Kaebused </h1>
+<h1> Suspensions </h1>
 
 <p>
-	<a asp-action="Create"> Lisa uus kaebus</a>
+	<a asp-action="Create"> Add a new Suspension</a>
 </p>
 
 <table class="table">
 	<thead>
 		<tr>
 			<th>
-				@Html.DisplayNameFor(Model => Model.KuritarvitajadID)
+				@Html.DisplayNameFor(Model => Model.StutentId)
 			</th>
 			<th>
 				@Html.DisplayNameFor(Model => Model.Firstname)
@@ -22,19 +22,16 @@
 				@Html.DisplayNameFor(Model => Model.Lastname)
 				</th>
 			<th>
-				@Html.DisplayNameFor(Model => Model.OpilaneVOpetaja)
+				@Html.DisplayNameFor(Model => Model.ReasonForSuspension)
 				</th>
 			<th>
-				@Html.DisplayNameFor(Model => Model.KuritarvitajaDescription)
+				@Html.DisplayNameFor(Model => Model.SuspensionStartDate)
 				</th>
 			<th>
-				@Html.DisplayNameFor(Model => Model.KuritegevusteArv)
+				@Html.DisplayNameFor(Model => Model.SuspensionEndDate)
 				</th>
 			<th>
-				@Html.DisplayNameFor(Model => Model.Kaebuse)
-				</th>
-			<th>
-				@Html.DisplayNameFor(Model => Model.KaebuseAdmin)
+				@Html.DisplayNameFor(Model => Model.NoteForParents)
 				</th>
 		</tr>
 	</thead>
@@ -44,7 +41,7 @@
 		{
 			<tr>
 			<td>
-				@Html.DisplayFor(modelItem => kaebused.KuritarvitajadID)
+				@Html.DisplayFor(modelItem => kaebused.StutentId)
 			</td>
 			<td>
 				@Html.DisplayFor(modelItem => kaebused.Firstname)
@@ -53,24 +50,22 @@
 				@Html.DisplayFor(modelItem => kaebused.Lastname)
 			</td>
 			<td>
-				@Html.DisplayFor(modelItem => kaebused.OpilaneVOpetaja)
+				@Html.DisplayFor(modelItem => kaebused.ReasonForSuspension)
 			</td>
 			<td>
-				@Html.DisplayFor(modelItem => kaebused.KuritarvitajaDescription)
+				@Html.DisplayFor(modelItem => kaebused.SuspensionStartDate)
 			</td>
 			<td>
-				@Html.DisplayFor(modelItem => kaebused.KuritegevusteArv)
+				@Html.DisplayFor(modelItem => kaebused.SuspensionEndDate)
 			</td>
 			<td>
-				@Html.DisplayFor(modelItem => kaebused.Kaebuse)
+				@Html.DisplayFor(modelItem => kaebused.NoteForParents)
 			</td>
+
 			<td>
-				@Html.DisplayFor(modelItem => kaebused.KaebuseAdmin)
-			</td>
-			<td>
-					<a asp-action="Delete" asp-route-id="@kaebused.KuritarvitajadID">Kustuta</a>
-				<a asp-action="Details" asp-route-id="@kaebused.KuritarvitajadID">Vaata</a>
-					<a asp-action="Edit" asp-route-id="@kaebused.KuritarvitajadID">Muuda</a>
+					<a asp-action="Delete" asp-route-id="@kaebused.StutentId">Delete</a>
+					<a asp-action="Details" asp-route-id="@kaebused.StutentId">Details</a>
+					<a asp-action="Edit" asp-route-id="@kaebused.StutentId">Edit</a>
 			</td>
 			</tr>
 		}

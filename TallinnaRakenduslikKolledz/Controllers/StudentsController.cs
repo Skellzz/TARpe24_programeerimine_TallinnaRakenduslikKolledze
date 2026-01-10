@@ -25,7 +25,7 @@ namespace TallinnaRakenduslikKolledz.Controllers
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> Create([Bind("Id,FirstName,LastName,EnrollmentDate,PassportPhoto")] Student student)
         {
-            if (!ModelState.IsValid)
+            if (ModelState.IsValid)
             {
                 _context.Students.Add(student);
                 await _context.SaveChangesAsync();

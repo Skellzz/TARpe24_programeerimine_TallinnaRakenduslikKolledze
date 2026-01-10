@@ -10,7 +10,6 @@
         public int StudentID { get; set; }
         public int EnrollmentID { get; set; }
         public int CourseID { get; set; }
-        public int stdentID { get; set; }
         public Grade CurrentGrade { get; set; }
         
         public Course Course { get; set; }
